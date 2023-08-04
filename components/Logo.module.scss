@@ -1,0 +1,14 @@
+.logo {
+  transition: 200ms ease all;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+
+  &:visited {
+    color: #000;
+  }
+
+  &:hover {
+    color: #39ff14;
+  }
+}

@@ -1,0 +1,19 @@
+.section {
+  background: var(--color-background-content);
+}
+
+.body {
+  padding: 16px 24px 48px 24px;
+  max-width: 768px;
+  margin: 0 auto 0 auto;
+}
+
+.heading {
+  padding: 88px 24px 88px 24px;
+  border-top: rgba(0, 0, 0, 0.1) 1px solid;
+  border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+  font-family: 'Heading';
+  font-size: 2.225rem;
+  line-height: 1.115;
+  display: block;
+}

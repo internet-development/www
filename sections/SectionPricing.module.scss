@@ -1,0 +1,78 @@
+.section {
+  background: var(--color-background-content);
+}
+
+.body {
+  padding: 16px 40px 48px 40px;
+  max-width: 800px;
+  margin: 0 auto 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 48px 24px 48px 24px;
+  }
+}
+
+.card {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.image {
+  background: var(--color-primary);
+  height: 188px;
+  width: 100%;
+}
+
+.img {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-top: 24px;
+}
+
+.description {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 8px;
+
+  strong {
+    width: 120px;
+    display: inline-block;
+  }
+}
+
+.glossary {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.list {
+  margin-top: 1.5rem;
+  padding-left: 24px;
+  line-height: 1.5;
+  list-style-type: upper-roman;
+}
+
+.item {
+  margin-top: 4px;
+  line-height: 1.5;
+
+  strong {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,22 @@
+.section {
+  background: var(--color-background-content);
+}
+
+.body {
+  padding: 16px 24px 48px 24px;
+  max-width: 768px;
+  margin: 0 auto 0 auto;
+}
+
+.image {
+  width: 100%;
+  display: block;
+}
+
+.paragraph {
+  margin-top: 24px;
+  max-width: 728px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8);
+}

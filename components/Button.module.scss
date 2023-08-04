@@ -1,0 +1,34 @@
+.button {
+  font-size: 12px;
+  background: var(--color-primary);
+  color: rgba(0, 0, 0, 1);
+  font-weight: 600;
+  border: 0;
+  border-radius: 16px;
+  margin: 0;
+  outline: 0;
+  padding: 8px 16px 8px 16px;
+  display: inline-flex;
+  cursor: pointer;
+  transition: 200ms ease all;
+  text-decoration: none;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.8);
+  border: 1px solid #000;
+
+  &:visited {
+    color: #000;
+    background: var(--color-primary);
+  }
+
+  &:hover {
+    color: #000;
+    background: var(--color-primary-secondary);
+    box-shadow: 0px 5px 0px 0px #000;
+  }
+
+  &:active {
+    transform: translateY(3px);
+    box-shadow: none;
+    background: var(--color-primary);
+  }
+}

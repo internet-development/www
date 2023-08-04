@@ -143,20 +143,24 @@ export function classNames(...args: any[]): string {
     var argType = typeof arg;
 
     if (argType === 'string' || argType === 'number') {
+      // @ts-ignore
       classes.push(arg);
     } else if (Array.isArray(arg)) {
       if (arg.length) {
         var inner = classNames.apply(null, arg);
         if (inner) {
+          // @ts-ignore
           classes.push(inner);
         }
       }
     } else if (argType === 'object') {
       if (arg.toString !== Object.prototype.toString) {
+        // @ts-ignore
         classes.push(arg.toString());
       } else {
         for (var key in arg) {
           if (hasOwn.call(arg, key) && arg[key]) {
+            // @ts-ignore
             classes.push(key);
           }
         }

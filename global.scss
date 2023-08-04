@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Heading';
+  src: url('https://next-s3-public.s3.us-west-2.amazonaws.com/fonts/libre/libre/LibreCaslonCondensed-Medium.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'MonoMedium';
+  src: url('https://next-s3-public.s3.us-west-2.amazonaws.com/JetBrainsMono-Medium.woff2') format('woff');
+}
+
 html,
 body,
 div,
@@ -102,10 +112,18 @@ section {
 
 html,
 body {
-  --color-background: #ffffff;
-  --color-text: #000000;
+  --color-background: rgba(0, 0, 0, 0.05);
+  --color-background-content: rgba(255, 255, 255, 1);
+  --color-text: rgba(0, 0, 0, 1);
+  --color-primary: #39ff14;
+  --color-primary-secondary: #51ff30;
 
   font-size: 16px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
   background: var(--color-background);
   color: var(--color-text);
   font-family: -apple-system, BlinkMacSystemFont, helvetica neue, helvetica, sans-serif;
