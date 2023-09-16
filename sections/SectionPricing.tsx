@@ -113,7 +113,7 @@ export default function SectionPricing(props) {
             more hours because we love what we're working on.
           </div>
           <div className={styles.label}>
-            <strong>Estimated cost</strong>$129,999 USD / mo
+            <strong>Estimated cost</strong>$89,000 USD / mo
           </div>
           <div className={styles.label}>
             <strong>Payment</strong>Non-refundable upfront payment
