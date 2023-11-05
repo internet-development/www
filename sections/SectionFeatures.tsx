@@ -11,7 +11,7 @@ export default function SectionFeatures(props) {
         <ul className={styles.list}>
           <li className={styles.item}>
             <strong>Visual Interface Design & Product Branding</strong>
-            <br /> We are obssessed with interfaces, logos and building design systems.
+            <br /> We are obsessed with interfaces, logos and building design systems.
           </li>
           <li className={styles.item}>
             <strong>Full Stack Web Development</strong>
