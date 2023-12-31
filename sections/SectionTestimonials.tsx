@@ -13,17 +13,7 @@ export default function SectionTestimonials(props) {
               <div className={styles.author}>
                 <strong>HQ Han</strong>
                 <br />
-                Ecosystem Growth, Protocol Labs
-              </div>
-            </div>
-          </div>
-          <div className={styles.card}>
-            <div className={styles.space}>
-              <p className={styles.testimonial}>“Absolute legends!”</p>
-              <div className={styles.author}>
-                <strong>Chris Waring</strong>
-                <br />
-                Web Lead, Protocol Labs
+                Founder, Ansa Research
               </div>
             </div>
           </div>
@@ -39,16 +29,6 @@ export default function SectionTestimonials(props) {
               </div>
             </div>
           </div>
-          <div className={styles.card}>
-            <div className={styles.space}>
-              <p className={styles.testimonial}>“You can trust to figure out what needs to be done and then get the job done well.”</p>
-              <div className={styles.author}>
-                <strong>Brent Vatne</strong>
-                <br />
-                Engineering Manager, Expo
-              </div>
-            </div>
-          </div>
         </div>
         <div className={styles.column}>
           <div className={styles.card}>
@@ -61,28 +41,8 @@ export default function SectionTestimonials(props) {
               </div>
             </div>
           </div>
-          <div className={styles.card}>
-            <div className={styles.space}>
-              <p className={styles.testimonial}>“Extremely humble and collaborative.”</p>
-              <div className={styles.author}>
-                <strong>Sam Yam</strong>
-                <br />
-                Co-founder, Patreon
-              </div>
-            </div>
-          </div>
         </div>
         <div className={styles.column}>
-          <div className={styles.card}>
-            <div className={styles.space}>
-              <p className={styles.testimonial}>“Rare combination of passion, professionalism, and dedication.”</p>
-              <div className={styles.author}>
-                <strong>Amy Cherette</strong>
-                <br />
-                Head of People Operations, Patreon
-              </div>
-            </div>
-          </div>
           <div className={styles.card}>
             <div className={styles.space}>
               <p className={styles.testimonial}>“Invaluable asset to design teams.”</p>

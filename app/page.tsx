@@ -7,6 +7,7 @@ import DefaultLayout from '@components/DefaultLayout';
 
 import SectionNavigation from '@sections/SectionNavigation';
 import SectionHero from '@sections/SectionHero';
+import SectionHeroImage from '@sections/SectionHeroImage';
 import SectionActions from '@sections/SectionActions';
 import SectionTestimonials from '@sections/SectionTestimonials';
 import SectionFeatures from '@sections/SectionFeatures';
@@ -20,6 +21,7 @@ export async function generateMetadata({ params, searchParams }) {
   const url = 'https://internet.dev';
 
   return {
+    metadataBase: new URL('https://internet.dev'),
     title,
     description,
     url,
@@ -58,6 +60,9 @@ export default async function Page(props) {
             We help you develop, launch, and manage the work. Avoid recruiting an expensive in-house design or development team from scratch. Get projects completed case-by-case,
             or have us embed with you, your team, or your company.
           </SectionHero>
+
+          <SectionHeroImage src="https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/ecfda005-3da8-4066-8520-61f0533226a6.jpg" />
+
           <SectionActions title="Become a client or partner" href="/pricing" cta="Learn more">
             We may have openings for new clients and full time partnerships, check out our prices and figure out if collaboration makes sense for you.
           </SectionActions>

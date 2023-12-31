@@ -14,6 +14,7 @@ export async function generateMetadata({ params, searchParams }) {
   const url = 'https://internet.dev/team';
 
   return {
+    metadataBase: new URL('https://internet.dev/team'),
     title,
     description,
     url,
@@ -21,6 +22,7 @@ export async function generateMetadata({ params, searchParams }) {
       title,
       description,
       url,
+      type: 'website',
       images: ['https://next-s3-public.s3.us-west-2.amazonaws.com/internet-dev/intdev.png'],
     },
     twitter: {
