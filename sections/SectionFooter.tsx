@@ -30,10 +30,13 @@ export default function SectionFooter(props) {
           <div className={styles.column}>
             <div className={styles.content}>
               <p className={styles.title}>Connect</p>
-              <a className={styles.link} href="https://x.com/internetxstudio">
+              <a className={styles.link} href="https://x.com/internetxstudio" target="_blank">
                 ➝ X
               </a>
-              <a className={styles.link} href="https://github.com/internet-development">
+              <a className={styles.link} href="https://read.cv/teams/intdev" target="_blank">
+                ➝ ReadCV
+              </a>
+              <a className={styles.link} href="https://github.com/internet-development" target="_blank">
                 ➝ GitHub
               </a>
             </div>
@@ -43,6 +46,12 @@ export default function SectionFooter(props) {
               <p className={styles.title}>Information</p>
               <a className={styles.link} href="/team">
                 ➝ Team
+              </a>
+              <a className={styles.link} href="https://github.com/internet-development/www">
+                ➝ View source
+              </a>
+              <a className={styles.link} href="https://github.com/internet-development/nextjs-sass-starter">
+                ➝ Template
               </a>
             </div>
           </div>
