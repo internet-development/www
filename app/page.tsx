@@ -17,7 +17,7 @@ import SectionQuote from '@sections/SectionQuote';
 
 export async function generateMetadata({ params, searchParams }) {
   const title = 'Internet Development Studio';
-  const description = 'Internet Development Studio is an engineering and design team based out of Seattle, WA and New York, NY. We design, brand, market and code.';
+  const description = 'Internet Development Studio is an engineering and design team based out of Seattle—WA, Boston—MA, and New York—NY. We design, brand, market and code.';
   const url = 'https://internet.dev';
 
   return {
@@ -52,8 +52,8 @@ export default async function Page(props) {
           <SectionHero
             title={
               <>
-                <strong>Internet Development Studio</strong> is an engineering and design team based out of <strong>Seattle, WA</strong> and <strong>New York, NY</strong>. We
-                design, brand, market and code.
+                <strong>Internet Development Studio</strong> is an engineering and design team based out of <strong>Seattle—WA</strong>, <strong>Boston-MA</strong> and{' '}
+                <strong>New York—NY</strong>. We design, brand, market and code.
               </>
             }
           >
