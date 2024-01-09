@@ -52,7 +52,7 @@ export default async function Page(props) {
           <SectionHero
             title={
               <>
-                <strong>Internet Development Studio</strong> is an engineering and design team based out of <strong>Seattle—WA</strong>, <strong>Boston-MA</strong> and{' '}
+                <strong>Internet Development Studio</strong> is an engineering and design team based out of <strong>Seattle—WA</strong>, <strong>Boston—MA</strong> and{' '}
                 <strong>New York—NY</strong>. We design, brand, market and code.
               </>
             }
