@@ -15,6 +15,9 @@ export default function SectionFooter(props) {
               <a className={styles.link} href="/inquire">
                 ➝ Inquire
               </a>
+              <a className={styles.link} href="https://t.me/internetdevelopmentstudio" target="_blank">
+                ➝ Talk on Telegram
+              </a>
             </div>
           </div>
           <div className={styles.column}>
@@ -30,14 +33,20 @@ export default function SectionFooter(props) {
           <div className={styles.column}>
             <div className={styles.content}>
               <p className={styles.title}>Connect</p>
-              <a className={styles.link} href="https://x.com/internetxstudio" target="_blank">
-                ➝ X
+              <a className={styles.link} href="https://bsky.app/profile/internetstudio.bsky.social" target="_blank">
+                ➝ Bluesky
+              </a>
+              <a className={styles.link} href="https://github.com/internet-development" target="_blank">
+                ➝ GitHub
+              </a>
+              <a className={styles.link} href="https://www.instagram.com/internetdevelopmentstudio/" target="_blank">
+                ➝ Instagram
               </a>
               <a className={styles.link} href="https://read.cv/teams/intdev" target="_blank">
                 ➝ ReadCV
               </a>
-              <a className={styles.link} href="https://github.com/internet-development" target="_blank">
-                ➝ GitHub
+              <a className={styles.link} href="https://x.com/internetxstudio" target="_blank">
+                ➝ X
               </a>
             </div>
           </div>
