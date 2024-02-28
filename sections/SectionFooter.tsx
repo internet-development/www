@@ -56,6 +56,9 @@ export default function SectionFooter(props) {
               <a className={styles.link} href="/team">
                 ➝ Team
               </a>
+              <a className={styles.link} href="/mood">
+                ➝ Mood board
+              </a>
               <a className={styles.link} href="https://github.com/internet-development/www">
                 ➝ View source
               </a>

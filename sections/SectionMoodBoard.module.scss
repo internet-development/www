@@ -1,0 +1,36 @@
+.section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--color-background-content);
+  padding: 0 8px 128px 8px;
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 420px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.row {
+  display: contents;
+}
+
+.cell {
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  padding: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
