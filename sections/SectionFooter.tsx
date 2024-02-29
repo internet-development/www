@@ -80,7 +80,7 @@ export default function SectionFooter(props) {
               <br />
               Internet Development Studio
               <br />
-              2023 Copyright &copy;
+              2024 Copyright &copy;
               <br />
               All rights reserved
             </p>
