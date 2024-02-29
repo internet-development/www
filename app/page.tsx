@@ -52,13 +52,12 @@ export default async function Page(props) {
           <SectionHero
             title={
               <>
-                <strong>Internet Development Studio</strong> is an engineering and design team based out of <strong>Seattle—WA</strong>, <strong>Boston—MA</strong> and{' '}
-                <strong>New York—NY</strong>. We design, brand, market and code.
+                <strong>Internet Development Studio</strong> is an engineering and design team from <strong>Seattle, Washington</strong>. We design, brand, market and code.
               </>
             }
           >
-            We help you develop, launch, and manage the work. Avoid recruiting an expensive in-house design or development team from scratch. Get projects completed case-by-case,
-            or have us embed with you, your team, or your company.
+            Our team will help you develop, launch, and manage the work. Avoid recruiting an expensive in-house design or development team from scratch. Get projects completed
+            case-by-case, or have us embed with you, your team, or your company.
           </SectionHero>
 
           <SectionHeroImage src="https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/ecfda005-3da8-4066-8520-61f0533226a6.jpg" />
@@ -70,7 +69,7 @@ export default async function Page(props) {
       </div>
       <SectionTestimonials />
       <SectionFeatures />
-      <SectionActions title="Hire us for your next project" href="/inquire" cta="Learn more">
+      <SectionActions title="Hire us" href="/inquire" cta="Learn more">
         Want to start the conversation? Lets work through a questionaire to determine if this will be a fit
       </SectionActions>
       <SectionProject />

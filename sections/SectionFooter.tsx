@@ -69,26 +69,21 @@ export default function SectionFooter(props) {
           </div>
         </div>
         <div className={styles.row}>
-          <div className={styles.column}>
-            <div className={styles.content}>
-              <p className={styles.subtext}>
-                We are not using tracking pixels and we are not using cookies. We are not gathering information about your browser variant or your approximate location and we are
-                not gathering information about your browsing actions. Our website is <a href="https://github.com/internet-development/www">open source</a> and whatever code is in
-                the repository is what gets deployed.
-              </p>
-              <p className={styles.copy}>
-                <Logo height="16px" href="/" />
-                <br />
-                Internet Development Studio
-                <br />
-                2023 Copyright &copy;
-                <br />
-                All rights reserved
-              </p>
-            </div>
-          </div>
-          <div className={styles.column}>
-            <div className={styles.content}></div>
+          <div className={styles.content} style={{ padding: 16 }}>
+            <p className={styles.subtext}>
+              We are not using tracking pixels and we are not using cookies. We are not gathering information about your browser variant or your approximate location and we are not
+              gathering information about your browsing actions. Our website is <a href="https://github.com/internet-development/www">open source</a> and whatever code is in the
+              repository is what gets deployed.
+            </p>
+            <p className={styles.copy}>
+              <Logo height="16px" href="/" />
+              <br />
+              Internet Development Studio
+              <br />
+              2023 Copyright &copy;
+              <br />
+              All rights reserved
+            </p>
           </div>
         </div>
       </footer>

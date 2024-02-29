@@ -4,50 +4,11 @@
 
 .body {
   padding: 48px 24px 48px 24px;
-  max-width: 800px;
+  max-width: 768px;
   margin: 0 auto 0 auto;
-}
-
-.paragraph {
-  margin-top: 24px;
-  line-height: 1.5;
-  padding: 0 16px 0 16px;
-  color: rgba(0, 0, 0, 0.8);
 }
 
 .image {
   display: block;
   width: 100%;
-}
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-
-  @media (max-width: 768px) {
-    display: block;
-  }
-}
-
-.column {
-  width: 50%;
-  padding: 16px;
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 16px 0 16px 0;
-  }
-}
-
-.content {
-  background: #39ff14;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02);
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.label {
-  text-align: right;
-  font-size: 0.8rem;
-  margin-top: 8px;
 }

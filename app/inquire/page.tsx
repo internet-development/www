@@ -43,7 +43,7 @@ export default async function Page(props) {
           <SectionNavigation />
         </div>
         <div className={styles.bottom}>
-          <SectionHero title="We are closed for new clients and partners, for now.">
+          <SectionHero title="We are closed for new clients and partners">
             We are currently experiencing high demand and will open up inquiries in the near future. Watch this space!
           </SectionHero>
           <SectionActions title="Learn about our pricing" href="/pricing" cta="Learn more">
