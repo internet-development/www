@@ -45,6 +45,16 @@
   padding: 24px;
   color: rgba(0, 0, 0, 1);
   line-height: 1.115;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.hanging {
+}
+
+.remainder {
+  min-width: 10%;
 }
 
 .author {
