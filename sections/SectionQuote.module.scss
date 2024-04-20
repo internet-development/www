@@ -1,20 +1,17 @@
 .section {
-  background: var(--color-background-content);
 }
 
 .body {
-  padding: 16px 24px 48px 24px;
+  padding: 16px 24px 12px 24px;
   max-width: 768px;
-  margin: 0 auto 0 auto;
+  margin: 48px auto 88px auto;
+  background: var(--color-background-content);
 }
 
 .heading {
-  padding: 88px 24px 88px 24px;
-  border-top: rgba(0, 0, 0, 0.1) 1px solid;
-  border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
   font-family: 'Heading';
-  font-size: 2.225rem;
-  line-height: 1.115;
+  font-size: 2.6rem;
+  line-height: 1.2;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;

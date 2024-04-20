@@ -25,8 +25,8 @@ export default function SectionTestimonials(props) {
     <div className={styles.section}>
       <div className={styles.body}>
         <div className={styles.column}>
-          <TestimonialCard name="HQ Han" source="Founder, Ansa Research">
-            I don’t know what we would do if we did not have their help.
+          <TestimonialCard name="Colin Evran" source="Head of Ecosystem, Protocol Labs">
+            One of the most badass teams I’ve had the pleasure of working with.
           </TestimonialCard>
         </div>
         <div className={styles.column}>
@@ -40,8 +40,8 @@ export default function SectionTestimonials(props) {
           </TestimonialCard>
         </div>
         <div className={styles.column}>
-          <TestimonialCard name="Josh Miles" source="Creative Director, Material">
-            Invaluable asset to design teams.
+          <TestimonialCard name="Jimmy Liu" source="Co-founder, Muddy">
+            An absolute pleasure working with the you and the team at the studio. Y'all our ride or die.
           </TestimonialCard>
         </div>
       </div>

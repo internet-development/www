@@ -3,27 +3,25 @@
 }
 
 .body {
-  max-width: 2000px;
-  margin: 0 auto 0 auto;
+  max-width: 1580px;
+  margin: 24px auto 24px auto;
+  padding: 24px;
 }
 
 .image {
   display: block;
   width: 100%;
-  margin-top: 48px;
 }
 
 .prompt {
   padding: 16px;
-  background: #ffffff;
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid #dcdcdc;
+  border: 1px solid rgba(176, 189, 171, 0.3);
+  border-radius: 16px;
   color: rgba(0, 0, 0, 0.8);
   border-radius: 4px;
-  font-size: 0.8rem;
   display: flex;
   align-items: center;
 }
@@ -51,7 +49,7 @@
 }
 
 .title {
-  font-size: 1.25rem;
+  font-size: 0.8rem;
   font-weight: 600;
   line-height: 1.5;
 }
@@ -60,5 +58,5 @@
   line-height: 1.5;
   margin-top: 6px;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }

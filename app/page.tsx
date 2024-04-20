@@ -73,9 +73,7 @@ export default async function Page(props) {
         Want to start the conversation? Lets work through a questionaire to determine if this will be a fit
       </SectionActions>
       <SectionProject />
-      <SectionQuote>
-        We are with you every step of the way. We're prepared to build it all on our own, collaborate with your ecosystem peers, or hand off the work to you or any other team.
-      </SectionQuote>
+      <SectionQuote>Let's work together. We will build great software with you, every step of the way.</SectionQuote>
       <SectionFooter />
     </DefaultLayout>
   );

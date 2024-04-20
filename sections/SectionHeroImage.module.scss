@@ -1,12 +1,21 @@
 .section {
-  padding: 16px 24px 48px 24px;
-  max-width: 1600px;
+  --theme-border: #ececec;
+
+  padding: 88px 24px 88px 24px;
   width: 100%;
   display: block;
   margin: 0 auto 0 auto;
+  background: repeating-linear-gradient(150deg, var(--theme-border), var(--theme-border) 1px, transparent 1px, transparent 20px),
+    repeating-linear-gradient(30deg, var(--theme-border), var(--theme-border) 1px, transparent 1px, transparent 20px);
+  background-size: 40px 46px;
+  border-top: 1px solid var(--theme-border);
+  border-bottom: 1px solid var(--theme-border);
+  margin-bottom: 48px;
 }
 
 .image {
   width: 100%;
   display: block;
+  max-width: 768px;
+  margin: 0 auto 0 auto;
 }

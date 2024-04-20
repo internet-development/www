@@ -8,124 +8,93 @@ export default function SectionPricing(props) {
       <div className={styles.body}>
         <div className={styles.card}>
           <img className={styles.img} src="https://next-s3-public.s3.us-west-2.amazonaws.com/internet-dev/spot-mockup.png" />
-          <div className={styles.title}>Mockups</div>
+          <div className={styles.title}>INTDEV joins your team for 3 months</div>
           <div className={styles.description}>
-            A mockup is a static representation of a product, showing users and stakeholders how it may look and be used. Make requests for complete website mockups or spot mockups
-            on demand with quick turn around.
+            Join forces with us for the next 3 months. Our team will integrate with yours, collaborating on original visual design, branding, full-stack software development,
+            go-to-market strategies, and user testing. We'll work swiftly, handling as many requests and changes as our schedule and capabilities allow.
             <br />
             <br />
-            Sometimes you need something quick, thats why we provide this option.
+            In a typical 3-month engagement, we can launch a website, create a new brand, develop a design system, and deliver large feature work that ships to customers. This is
+            the perfect starting point for companies looking to make a significant impact in a short timeframe.
           </div>
           <div className={styles.label}>
-            <strong>Estimated cost</strong>$18,999 USD
+            <strong>Estimated cost</strong>$185,000 USD
           </div>
           <div className={styles.label}>
             <strong>Payment</strong>Non-refundable upfront payment
           </div>
           <div className={styles.label}>
-            <strong>Duration</strong>7 Days
-          </div>
-          <div className={styles.label}>
-            <strong>Scope</strong>5 pages
-          </div>
-          <div className={styles.label}>
-            <strong>Amendments</strong>3 change orders
+            <strong>Team size</strong>4
           </div>
         </div>
 
         <div className={styles.card}>
           <img className={styles.img} src="https://next-s3-public.s3.us-west-2.amazonaws.com/internet-dev/spot-wireframe.png" />
-          <div className={styles.title}>Websites</div>
+          <div className={styles.title}>INTDEV joins your team for 6 months</div>
           <div className={styles.description}>
-            A website is a set of related web pages located under a single domain name. Everything will be designed, built, and deployed by us. We will also include a light CMS
-            where you can manage small changes.
+            Extend our partnership to 6 months, and our builders and designers will become an integral part of your team. We'll create, brand, develop, launch, and test your
+            projects with speed and agility. We'll be right there in your channels, working side-by-side to make as many impactful changes as possible.
             <br />
             <br />
-            Your project with us starts as a design & build, we will make your website and deploy it to the internet. Afterwards we will treat your website as if we were
-            professional gardeners, tending and caring for your web pages.
+            With 6 months, we can take things to the next level. A typical engagement of this length allows us to launch multiple new products, each with its own unique design
+            system and brand. We can also deliver a few static websites, large features, and conduct user testing sessions to ensure your products resonate with your target
+            audience.
           </div>
           <div className={styles.label}>
-            <strong>Estimated cost</strong>$110,999 USD
-          </div>
-          <div className={styles.label}>
-            <strong>Upkeep</strong>$599 USD / mo
-          </div>
-          <div className={styles.label}>
-            <strong>Development</strong>$11,372 USD / mo
+            <strong>Estimated cost</strong>$380,000 USD
           </div>
           <div className={styles.label}>
             <strong>Payment</strong>Non-refundable upfront payment
           </div>
           <div className={styles.label}>
-            <strong>Duration</strong>As long as development or upkeep is paid for
-          </div>
-          <div className={styles.label}>
-            <strong>Scope</strong>5 web page max
-          </div>
-          <div className={styles.label}>
-            <strong>Amendments</strong>As many that are necessary
+            <strong>Team size</strong>4
           </div>
         </div>
 
         <div className={styles.card}>
           <img className={styles.img} src="https://next-s3-public.s3.us-west-2.amazonaws.com/internet-dev/spot-apps.png" />
-          <div className={styles.title}>Web applications</div>
+          <div className={styles.title}>INTDEV joins your team for 9 months</div>
           <div className={styles.description}>
-            A web application is software that runs in your web browser, often made by businesses that have to exchange information and deliver services remotely. Everything with
-            be designed, built, and deployed by us. We will also include a custom CMS for your application and provide database backups.
+            Unlock the full potential of our partnership by working with us for 9 months. This extended engagement provides ample time to launch a wide array of products, brands,
+            and features, creating a comprehensive ecosystem for your company.
             <br />
             <br />
-            Your application with us starts as a design & build, we will build your application, ensure that it is secure for your users, and run your database. Afterwards we will
-            treat your product or platform as if we were professional gardeners, tending and caring for your web pages and users.
+            With 9 months, we can dive deep into your company's long-term goals and develop a holistic product development strategy that encompasses multiple product launches,
+            cohesive branding across all touchpoints, and a robust feature set that keeps your customers engaged. Our team will be dedicated to your success, ensuring that every
+            aspect of your company's digital presence is optimized for growth.
           </div>
           <div className={styles.label}>
-            <strong>Estimated cost</strong>$242,999 USD
-          </div>
-          <div className={styles.label}>
-            <strong>Upkeep</strong>$5,999 USD / mo (per 1 million page views)
-          </div>
-          <div className={styles.label}>
-            <strong>Development</strong>$31,471 USD / mo
+            <strong>Estimated cost</strong>$575,000 USD
           </div>
           <div className={styles.label}>
             <strong>Payment</strong>Non-refundable upfront payment
           </div>
           <div className={styles.label}>
-            <strong>Duration</strong>As long as development or upkeep is paid for
-          </div>
-          <div className={styles.label}>
-            <strong>Scope</strong>1,000,000 page views
-          </div>
-          <div className={styles.label}>
-            <strong>Amendments</strong>As many that are necessary
+            <strong>Team size</strong>4
           </div>
         </div>
 
         <div className={styles.card}>
           <img className={styles.img} src="https://next-s3-public.s3.us-west-2.amazonaws.com/internet-dev/spot-embed.png" />
-          <div className={styles.title}>Team embedding</div>
+          <div className={styles.title}>INTDEV joins your team for 12 months</div>
           <div className={styles.description}>
-            Internet Development Studio can be hired to take on projects from you, your team, or company. We will craft software, user-centric products, and perform marketing to
-            help you stand out. During this time we will act as if we are your employees and do our best to adjust to the culture and performance expectations.
+            Imagine the possibilities of having our entire team join you for a full year. This is the ultimate partnership, where we'll launch as many products, brands, and
+            websites as possible during our time together.
             <br />
             <br />
-            As a studio we can only embed with one entity at a time. So you will get 40 hours a week (minimum) of our undivided attention. In a lot of cases, we tend to allocate
-            more hours because we love what we're working on.
+            With a 12-month engagement, the sky's the limit. We'll become a seamless extension of your company, working tirelessly to bring your vision to life. From ideation to
+            execution, our team will be there every step of the way, launching products, creating captivating brands, and developing full stack web applications or static websites
+            that drive your business forward. With our studio's full attention and resources dedicated to your company for an entire year, you can expect unparalleled results and a
+            transformative experience that will set you apart in your industry.
           </div>
           <div className={styles.label}>
-            <strong>Estimated cost</strong>$89,000 USD / mo
+            <strong>Estimated cost</strong>$750,000 USD
           </div>
           <div className={styles.label}>
             <strong>Payment</strong>Non-refundable upfront payment
           </div>
           <div className={styles.label}>
-            <strong>Duration</strong>As long as services are paid for
-          </div>
-          <div className={styles.label}>
-            <strong>Scope</strong>3 web applications or websites
-          </div>
-          <div className={styles.label}>
-            <strong>Amendments</strong>As many that are necessary
+            <strong>Team size</strong>4
           </div>
         </div>
 
@@ -145,15 +114,8 @@ export default function SectionPricing(props) {
             </li>
             <li className={styles.item}>
               <strong>Upkeep fees</strong>
-              <br />A portion of the advanced funds are used for upkeep of your website, databases, and/or applications. If fund's are not advanced we will maintain your services
-              for 45 days until permanent non-reversible termination. These fee's begin after a project has been successfully launched.
-            </li>
-            <li className={styles.item}>
-              <strong>Development fees</strong>
-              <br />
-              Change orders in a development contract refer to formal requests to modify the original scope of work, specifications of a project, and/or growth of a service are
-              acceptable as long as development fees are sent as advanced funds to the company. Failure to pay development fees does not result in termination of your website,
-              database, and/or applications unless the upkeep fees are not paid. These fee's begin after a project has been successfully launched.
+              <br />A portion of the payment funds are used for upkeep of your website, databases, and/or applications. If fund's are not paid we will maintain your services for 45
+              days until permanent non-reversible termination.
             </li>
           </ol>
         </div>

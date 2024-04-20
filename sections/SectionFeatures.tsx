@@ -8,7 +8,7 @@ export default function SectionFeatures(props) {
   return (
     <div className={styles.section}>
       <div className={styles.body}>
-        <img className={styles.image} src="https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/54f03e3a-5cc6-4f5c-9590-ddc10eae1a64.png" />
+        <img className={styles.image} src="https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/bf87a743-e406-4c09-b1b9-8a5ef5165720.png" />
       </div>
       <div className={styles.promptBody}>
         <div className={styles.prompt}>

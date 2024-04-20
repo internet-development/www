@@ -13,10 +13,10 @@ export default function SectionFooter(props) {
             <div className={styles.content}>
               <p className={styles.title}>Collaborate</p>
               <a className={styles.link} href="/inquire">
-                ➝ Inquire
+                Inquire
               </a>
               <a className={styles.link} href="https://t.me/internetdevelopmentstudio" target="_blank">
-                ➝ Talk on Telegram
+                Talk on Telegram
               </a>
             </div>
           </div>
@@ -24,7 +24,7 @@ export default function SectionFooter(props) {
             <div className={styles.content}>
               <p className={styles.title}>Offering</p>
               <a className={styles.link} href="/pricing">
-                ➝ Pricing
+                Pricing
               </a>
             </div>
           </div>
@@ -34,19 +34,19 @@ export default function SectionFooter(props) {
             <div className={styles.content}>
               <p className={styles.title}>Connect</p>
               <a className={styles.link} href="https://bsky.app/profile/internetstudio.bsky.social" target="_blank">
-                ➝ Bluesky
+                Bluesky
               </a>
               <a className={styles.link} href="https://github.com/internet-development" target="_blank">
-                ➝ GitHub
+                GitHub
               </a>
               <a className={styles.link} href="https://www.instagram.com/internetdevelopmentstudio/" target="_blank">
-                ➝ Instagram
+                Instagram
               </a>
               <a className={styles.link} href="https://read.cv/teams/intdev" target="_blank">
-                ➝ ReadCV
+                ReadCV
               </a>
               <a className={styles.link} href="https://x.com/internetxstudio" target="_blank">
-                ➝ X
+                X (Twitter)
               </a>
             </div>
           </div>
@@ -54,16 +54,16 @@ export default function SectionFooter(props) {
             <div className={styles.content}>
               <p className={styles.title}>Information</p>
               <a className={styles.link} href="/team">
-                ➝ Team
+                Team
               </a>
               <a className={styles.link} href="/mood">
-                ➝ Mood board
+                Mood board
               </a>
               <a className={styles.link} href="https://github.com/internet-development/www">
-                ➝ View source
+                View source
               </a>
               <a className={styles.link} href="https://github.com/internet-development/nextjs-sass-starter">
-                ➝ Template
+                Template
               </a>
             </div>
           </div>
