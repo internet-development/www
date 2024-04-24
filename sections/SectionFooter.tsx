@@ -16,13 +16,16 @@ export default function SectionFooter(props) {
                 Inquire
               </a>
               <a className={styles.link} href="https://t.me/internetdevelopmentstudio" target="_blank">
-                Talk on Telegram
+                Telegram
               </a>
             </div>
           </div>
           <div className={styles.column}>
             <div className={styles.content}>
               <p className={styles.title}>Offering</p>
+              <a className={styles.link} href="https://wireframes.internet.dev" target="_blank">
+                Work samples
+              </a>
               <a className={styles.link} href="/pricing">
                 Pricing
               </a>
@@ -46,7 +49,7 @@ export default function SectionFooter(props) {
                 ReadCV
               </a>
               <a className={styles.link} href="https://x.com/internetxstudio" target="_blank">
-                X (Twitter)
+                Twitter
               </a>
             </div>
           </div>
@@ -57,13 +60,13 @@ export default function SectionFooter(props) {
                 Team
               </a>
               <a className={styles.link} href="/mood">
-                Mood board
+                Mood
               </a>
               <a className={styles.link} href="https://github.com/internet-development/www">
-                View source
+                Source
               </a>
               <a className={styles.link} href="https://github.com/internet-development/nextjs-sass-starter">
-                Template
+                Templates
               </a>
             </div>
           </div>

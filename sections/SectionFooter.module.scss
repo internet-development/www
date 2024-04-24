@@ -1,4 +1,5 @@
 .body {
+  margin-top: 8rem;
   background: var(--color-background);
 }
 
@@ -16,7 +17,7 @@
   font-weight: 700;
   line-height: 1.5;
   padding-bottom: 8px;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .row {
@@ -38,14 +39,14 @@
 .subtext {
   font-weight: 400;
   line-height: 1.5;
-  font-size: 0.8rem;
+  font-size: 1rem;
 
   a {
-    color: #000;
+    color: rgba(0, 0, 0, 0.6);
     transition: 200ms ease all;
     cursor: pointer;
     &:visited {
-      color: #000;
+      color: rgba(0, 0, 0, 0.6);
     }
 
     &:hover {
@@ -58,24 +59,23 @@
   margin-top: 48px;
   font-weight: 400;
   line-height: 1.5;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .link {
   line-height: 1.5;
   display: block;
   text-decoration: none;
-  color: #000;
+  color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 1rem;
   transition: 200ms ease all;
 
   &:visited {
-    color: #000;
+    color: rgba(0, 0, 0, 0.6);
   }
 
   &:hover {
     color: rgba(0, 0, 0, 0.8);
-    transform: translateX(8px);
   }
 }

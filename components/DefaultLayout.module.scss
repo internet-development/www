@@ -19,3 +19,32 @@
   height: 100%;
   width: 100%;
 }
+
+.content {
+  max-width: 768px;
+  margin: 48px auto 88px auto;
+  padding: 0 24px 0 24px;
+}
+
+.heading {
+  font-family: 'Heading';
+  font-size: 3.815rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.sub {
+  margin-top: 1.563rem;
+  font-family: 'Heading';
+  font-size: 1.953rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.p {
+  font-size: 1.25rem;
+  margin-top: 1.563rem;
+  line-height: 1.6;
+}
