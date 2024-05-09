@@ -18,6 +18,9 @@ export default function SectionFooter(props) {
               <a className={styles.link} href="https://t.me/internetdevelopmentstudio" target="_blank">
                 Telegram
               </a>
+              <a className={styles.link} href="https://x.com/internetxstudio" target="_blank">
+                X / Twitter
+              </a>
             </div>
           </div>
           <div className={styles.column}>
@@ -29,6 +32,15 @@ export default function SectionFooter(props) {
               <a className={styles.link} href="/pricing">
                 Pricing
               </a>
+              <a className={styles.link} href="https://github.com/internet-development/nextjs-sass-starter">
+                Templates
+              </a>
+              <a className={styles.link} href="/mood">
+                Mood
+              </a>
+              <a className={styles.link} href="https://github.com/internet-development/www">
+                Source code
+              </a>
             </div>
           </div>
         </div>
@@ -36,6 +48,9 @@ export default function SectionFooter(props) {
           <div className={styles.column}>
             <div className={styles.content}>
               <p className={styles.title}>Connect</p>
+              <a className={styles.link} href="/team">
+                Team
+              </a>
               <a className={styles.link} href="https://bsky.app/profile/internetstudio.bsky.social" target="_blank">
                 Bluesky
               </a>
@@ -48,25 +63,19 @@ export default function SectionFooter(props) {
               <a className={styles.link} href="https://read.cv/teams/intdev" target="_blank">
                 ReadCV
               </a>
-              <a className={styles.link} href="https://x.com/internetxstudio" target="_blank">
-                Twitter
-              </a>
             </div>
           </div>
           <div className={styles.column}>
             <div className={styles.content}>
-              <p className={styles.title}>Information</p>
-              <a className={styles.link} href="/team">
-                Team
+              <p className={styles.title}>Legal</p>
+              <a className={styles.link} href="https://txt.dev/wwwjim/intdev-acceptable-use">
+                Acceptable Use
               </a>
-              <a className={styles.link} href="/mood">
-                Mood
+              <a className={styles.link} href="https://txt.dev/wwwjim/intdev-terms-of-service">
+                Terms of Service
               </a>
-              <a className={styles.link} href="https://github.com/internet-development/www">
-                Source
-              </a>
-              <a className={styles.link} href="https://github.com/internet-development/nextjs-sass-starter">
-                Templates
+              <a className={styles.link} href="https://txt.dev/wwwjim/intdev-privacy-policy">
+                Prviacy Policy
               </a>
             </div>
           </div>
