@@ -47,4 +47,16 @@
   font-size: 1.25rem;
   margin-top: 1.563rem;
   line-height: 1.6;
+
+  a {
+    color: var(--color-text);
+
+    &:visited {
+      color: var(--color-text);
+    }
+
+    &:hover {
+      color: var(--color-text);
+    }
+  }
 }
