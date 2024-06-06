@@ -39,6 +39,7 @@ export default function SectionSpec(props) {
         We join your team
         <SubItem>Attend standup, meetings, and gatherings</SubItem>
         <SubItem>Do as much work as we can</SubItem>
+        <SubItem>Teach you what we know</SubItem>
         <SubItem>Be available 24/7</SubItem>
       </Item>
       <Item>
@@ -55,9 +56,10 @@ export default function SectionSpec(props) {
       <Item>
         We make you a design system
         <SubItem>Go from zero to a new design system in Figma</SubItem>
-        <SubSubItem>We work on our own.</SubSubItem>
-        <SubSubItem>We researched https://designsystems.surf/design-systems.</SubSubItem>
-        <SubSubItem>We researched https://www.designsystems.com/</SubSubItem>
+        <SubSubItem>We work on our own</SubSubItem>
+        <SubSubItem>Our friends make them all the time</SubSubItem>
+        <SubSubItem>We researched designsystems.surf/design-systems</SubSubItem>
+        <SubSubItem>We researched designsystems.com</SubSubItem>
         <SubSubItem>We worked with Google Material 3 in production</SubSubItem>
         <SubItem>Go from zero to a new component library in TypeScript and library of choice</SubItem>
       </Item>
