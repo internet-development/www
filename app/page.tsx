@@ -49,8 +49,13 @@ export default async function Page(props) {
 
       <div className={styles.content}>
         <h1 className={styles.heading}>American Internet Experience Design & Webmaster Practice</h1>
-        <h4 className={styles.sub}>&nbsp;⎯⊹ Andrew Alimbuyuguen, Elijah Seed Arita, Jimmy Lee, Anastasiya Uraleva, Xiangan He, and Friends</h4>
-        <p className={styles.p} style={{ marginTop: `4rem` }}>
+        <h4 className={styles.sub}>&nbsp;⎯⊹ Andrew Alimbuyuguen, Elijah Seed Arita, Jimmy Lee, Anastasiya Uraleva, Xiangan He, Anastasiia "Sia" Krimmel, and Friends</h4>
+        <img
+          className={styles.image}
+          style={{ marginTop: `4rem` }}
+          src="https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/f250ba57-608b-4c43-9bed-29d310b3ccc7.png"
+        />
+        <p className={styles.p}>
           The Internet Development Studio Company ("INTDEV") of Seattle, WA is home to a group of American internet designers and webmasters building for the international internet
           community. Our team specializes in design, branding, marketing, and coding. We are dedicated to helping you develop, launch, and manage your projects.
         </p>{' '}
