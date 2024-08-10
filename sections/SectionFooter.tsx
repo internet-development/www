@@ -29,6 +29,9 @@ export default function SectionFooter(props) {
               <a className={styles.link} href="https://wireframes.internet.dev" target="_blank">
                 Work samples
               </a>
+              <a className={styles.link} href="/office">
+                Office space
+              </a>
               <a className={styles.link} href="/pricing">
                 Pricing
               </a>
