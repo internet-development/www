@@ -12,7 +12,7 @@ export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params, searchParams }) {
   const title = 'internet.dev/office';
-  const description = 'dadada';
+  const description = 'Learn about the office space Internet Development Studio Company works out of.';
   const url = 'https://internet.dev/office';
 
   return {
@@ -46,8 +46,8 @@ export default async function Page(props) {
         </div>
         <div className={styles.bottom}>
           <SectionOffice />
-          <SectionActions title="Join the office" href="https://users.garden" cta="Join">
-            Create an account on Users Garden to apply for a dedicated desk or partner workspace.
+          <SectionActions title="Manage your account" href="https://users.garden" cta="Manage">
+            Manage your account as a member of the Internet Development Studio Company network.
           </SectionActions>
         </div>
       </div>

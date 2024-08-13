@@ -2,6 +2,11 @@
   background: var(--color-background-content);
 }
 
+.image {
+  display: block;
+  width: 100%;
+}
+
 .body {
   padding: 16px 24px 48px 24px;
   max-width: 768px;
