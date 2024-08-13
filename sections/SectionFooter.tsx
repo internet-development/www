@@ -27,19 +27,16 @@ export default function SectionFooter(props) {
             <div className={styles.content}>
               <p className={styles.title}>Offering</p>
               <a className={styles.link} href="https://wireframes.internet.dev" target="_blank">
-                Work samples
+                Prototypes
+              </a>
+              <a className={styles.link} href="/office">
+                Office
               </a>
               <a className={styles.link} href="/pricing">
                 Pricing
               </a>
-              <a className={styles.link} href="https://github.com/internet-development/nextjs-sass-starter">
-                Templates
-              </a>
               <a className={styles.link} href="/mood">
                 Mood
-              </a>
-              <a className={styles.link} href="https://github.com/internet-development/www">
-                Source code
               </a>
             </div>
           </div>
