@@ -6,6 +6,7 @@ import DefaultLayout from '@components/DefaultLayout';
 import SectionNavigation from '@sections/SectionNavigation';
 import SectionFooter from '@sections/SectionFooter';
 import SectionOffice from '@sections/SectionOffice';
+import SectionOfficeRules from '@sections/SectionOfficeRules';
 import SectionActions from '@sections/SectionActions';
 
 export const dynamic = 'force-dynamic';
@@ -49,6 +50,7 @@ export default async function Page(props) {
           <SectionActions title="Manage your account" href="https://users.garden" cta="Manage">
             Manage your account as a member of the Internet Development Studio Company network.
           </SectionActions>
+          <SectionOfficeRules />
         </div>
       </div>
       <SectionFooter />

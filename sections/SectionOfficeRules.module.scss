@@ -1,0 +1,51 @@
+.section {
+  background: var(--color-background-content);
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.body {
+  padding: 16px 24px 48px 24px;
+  max-width: 768px;
+  margin: 0 auto 0 auto;
+}
+
+.image {
+  width: 100%;
+  display: block;
+}
+
+.heading {
+  margin-top: 24px;
+  max-width: 728px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.paragraph {
+  margin-top: 24px;
+  max-width: 728px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 200ms ease all;
+
+  &:visited {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
