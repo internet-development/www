@@ -44,9 +44,9 @@ export default async function Page(props) {
         </div>
         <div className={styles.bottom}>
           <SectionTeam>
-            <strong>Anastasiya Uraleva</strong>, <strong>Andrew Alimbuyuguen</strong>, <strong>Elijah Seed Arita</strong>, <strong>Xiangan He</strong>,{' '}
-            <strong>Anastasiia "Sia" Krimmel</strong>, <strong>Jimmy Lee</strong> and friends are computer aficionados at heart. They live and breathe making websites and graphics.
-            They look forward to the next opportunity to build alongside teams that are improving the world.
+            <strong>Anastasiya Uraleva</strong>, <strong>Andrew Alimbuyuguen</strong>, <strong>Elijah Seed Arita</strong>, <strong>Xiangan He</strong>, <strong>Jimmy Lee</strong>{' '}
+            and friends are computer aficionados at heart. They live and breathe making websites and graphics. They look forward to the next opportunity to build alongside teams
+            that are improving the world.
           </SectionTeam>
           <SectionActions title="Work with us" href="/pricing" cta="Learn more">
             We have openings for new clients and partners, check out our prices and figure out if collaboration makes sense for you.

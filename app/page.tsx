@@ -49,7 +49,7 @@ export default async function Page(props) {
 
       <div className={styles.content}>
         <h1 className={styles.heading}>American Internet Experience Design & Webmaster Practice</h1>
-        <h4 className={styles.sub}>&nbsp;⎯⊹ Andrew Alimbuyuguen, Elijah Seed Arita, Jimmy Lee, Anastasiya Uraleva, Xiangan He, Anastasiia "Sia" Krimmel, and Friends</h4>
+        <h4 className={styles.sub}>&nbsp;⎯⊹ Andrew Alimbuyuguen, Elijah Seed Arita, Jimmy Lee, Anastasiya Uraleva, Xiangan He, and Friends</h4>
         <img
           className={styles.image}
           style={{ marginTop: `4rem` }}
