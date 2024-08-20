@@ -24,8 +24,8 @@ export default function SectionOfficeRules(props) {
 
         <p className={styles.paragraph}>
           While our office space is designed to be comfortable and conducive to productivity, it is not intended to be used as a residential home. Living in the office is strictly
-          prohibited. The space should be used exclusively for professional purposes, and personal activities that would should occur in a residential Seattle setting should be
-          conducted outside the office.
+          prohibited. The space should be used exclusively for professional purposes, and personal activities that would occur in a residential Seattle setting should be conducted
+          outside the office.
         </p>
 
         <p className={styles.paragraph}>
@@ -44,9 +44,9 @@ export default function SectionOfficeRules(props) {
         </p>
 
         <p className={styles.paragraph}>
-          Guests must be accompanied by Internet Development Studio Company employees at all times. Hosts are responsible for the conduct of their guests while they are in the
-          office space. Additionally, for the safety of all partners and contributors, delivery personnel and couriers are not permitted inside the workspace. Please announce
-          guests in our communication channels when they come.
+          Guests must be accompanied by their hosts at all times. Hosts are responsible for the conduct of their guests while they are in the office space. Additionally, for the
+          safety of all partners and contributors, delivery personnel and couriers are not permitted inside the workspace. Please announce guests in our communication channels when
+          they come.
         </p>
 
         <p className={styles.paragraph}>
