@@ -82,7 +82,7 @@ export default function SectionOfficeRules(props) {
         </p>
 
         <p className={styles.paragraph}>
-          If you wish to host an event in the office space, prior approval is required. Please submit event details and a complete guest list in advance for review.
+          If you wish to host an event in the office space, prior approval is required. Please submit event details at least two weeks before the event.
         </p>
 
         <p className={styles.paragraph}>Finally, we hope you pursue your dreams and build your vision.</p>
