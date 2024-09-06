@@ -72,7 +72,7 @@ export default function SectionFooter(props) {
                 Terms of Service
               </a>
               <a className={styles.link} href="https://txt.dev/wwwjim/intdev-privacy-policy">
-                Prviacy Policy
+                Privacy Policy
               </a>
             </div>
           </div>
