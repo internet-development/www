@@ -1,0 +1,20 @@
+.icon {
+  vertical-align: middle;
+  color: var(--theme-text);
+
+  &:hover {
+    color: var(--color-primary);
+  }
+
+  svg {
+    height: 1rem;
+
+    @media (max-width: 1024px) {
+      height: 1.4rem;
+    }
+
+    @media (max-width: 568px) {
+      height: 2rem;
+    }
+  }
+}

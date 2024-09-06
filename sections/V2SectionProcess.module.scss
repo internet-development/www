@@ -1,0 +1,132 @@
+.backdrop {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    min-height: 228px;
+  }
+}
+
+.card {
+  align-self: stretch;
+  border-right: 1px solid var(--theme-marketing-border);
+  flex-shrink: 0;
+  padding: 24px 24px 24px 24px;
+  width: 25%;
+
+  &:first-child {
+    padding: 24px 24px 24px 0px;
+  }
+
+  &:last-child {
+    border-right: 0px solid var(--theme-marketing-border);
+    flex-shrink: 1;
+    min-width: 10%;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    border-right: 0px solid var(--theme-marketing-border);
+    display: block;
+    padding: 24px 0 24px 0;
+    width: 100%;
+
+    &:first-child {
+      padding: 24px 0 24px 0;
+    }
+  }
+}
+
+.description {
+  margin: 1rem 0 2rem 0;
+}
+
+.h2 {
+  font-size: var(--theme-typescale-medium);
+  font-weight: 600;
+  margin-top: 2rem;
+  max-width: 768px;
+  width: 100%;
+}
+
+.h3 {
+  font-size: var(--theme-typescale-medium);
+  max-width: 768px;
+  width: 100%;
+  font-weight: 600;
+  padding-bottom: 128px;
+  margin-top: 4rem;
+}
+
+.h4 {
+  font-size: var(--theme-typescale-subsection-regular);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.label {
+  color: var(--theme-marketing-color-label);
+  font-family: 'MonoMedium';
+  font-size: var(--theme-typescale-tiny);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.listItem {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.listItemLeft {
+  flex-shrink: 0;
+}
+
+.listItemRight {
+  min-width: 10%;
+  padding-left: 12px;
+  width: 100%;
+}
+
+.process {
+  border-top: 1px solid var(--theme-marketing-border);
+  padding: 24px 24px 88px 24px;
+
+  @media (max-width: 1024px) {
+    font-size: 12px;
+  }
+}
+
+.slot {
+  align-items: flex-start;
+  border-bottom: 1px solid var(--theme-marketing-border);
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    border-bottom: 0px;
+    display: block;
+  }
+}
+
+.link {
+  display: inline-block;
+  color: var(--color-text);
+  text-decoration: none;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &:visited {
+    color: var(--color-text);
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

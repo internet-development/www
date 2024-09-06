@@ -118,6 +118,19 @@ body {
   --color-primary: #00ff89;
   --color-primary-secondary: rgba(0, 255, 137, 0.6);
 
+  --theme-marketing-border: #e0e0e0;
+  --theme-marketing-color-label: rgba(0, 0, 0, 0.5);
+
+  --theme-background: rgba(255, 255, 255, 1);
+
+  --theme-typescale-large: 2.488rem;
+  --theme-typescale-medium: 2.074rem;
+  --theme-typescale-regular: 1.728rem;
+  --theme-typescale-subsection-heading: 1.44rem;
+  --theme-typescale-subsection-regular: 1.2rem;
+  --theme-typescale-base: 1rem;
+  --theme-typescale-tiny: 0.833rem;
+
   font-size: 16px;
 
   @media (max-width: 768px) {
