@@ -1,0 +1,18 @@
+.hero {
+  background: var(--color-text);
+  color: var(--theme-background);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.content {
+  padding: 24px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  padding-bottom: 136px;
+}
+
+.text {
+  font-size: var(--theme-typescale-regular);
+  max-width: 768px;
+}

@@ -1,0 +1,45 @@
+.h2 {
+  margin-top: 48px;
+  font-size: var(--theme-typescale-medium);
+  max-width: 768px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: var(--theme-typescale-medium);
+  max-width: 768px;
+  width: 100%;
+  font-weight: 600;
+  padding-bottom: 128px;
+}
+
+.clients {
+  padding: 24px;
+}
+
+.slots {
+  margin-bottom: 4rem;
+}
+
+.image {
+  max-width: 400px;
+  display: inline-block;
+  margin: 24px 24px 0px 0px;
+  transition: all 200ms ease;
+  transition-delay: 480ms;
+
+  @media (max-width: 1024px) {
+    max-width: 228px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 172px;
+  }
+
+  @media (max-width: 568px) {
+    margin: 24px 0px 0px 0px;
+    max-width: 568px;
+    width: 100%;
+  }
+}

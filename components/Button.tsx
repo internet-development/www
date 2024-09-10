@@ -6,7 +6,7 @@ import * as Utilities from '@common/utilities';
 export default function Button(props) {
   if (!Utilities.isEmpty(props.href)) {
     return (
-      <a className={styles.button} style={props.style} href={props.href}>
+      <a className={styles.button} style={props.style} href={props.href} target={props.target}>
         {props.children}
       </a>
     );

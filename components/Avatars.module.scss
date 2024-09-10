@@ -1,0 +1,21 @@
+.avatars {
+  align-items: center;
+  display: flex;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.item {
+  background-position: center;
+  background-size: cover;
+  border: 2px solid var(--theme-background);
+  border-radius: 50%;
+  height: 40px;
+  margin-left: -0.8rem;
+  position: relative;
+  width: 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
