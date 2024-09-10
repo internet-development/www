@@ -176,13 +176,13 @@ export default async function Page(props) {
         </div>
         <div className={styles.bottom}>
           <div className={styles.caption}>
-            <Link href="/">⬆ Back to top</Link>
+            <Link href="/">⭡ Back to top</Link>
           </div>
           <div className={styles.copyright}>
             <span>Copyright © 2024. All rights reserved.</span>
           </div>
           <div className={styles.caption}>
-            <Link href={`https://github.com/internet-development/www`}>⬇ View source code</Link>
+            <Link href={`https://github.com/internet-development/www`}>⭣ View source code</Link>
           </div>
           <div className={styles.caption}>
             <Telegram href={`https://t.me/internetdevelopmentstudio`} target="_blank" style={{ marginRight: `24px` }}>

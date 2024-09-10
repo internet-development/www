@@ -8,7 +8,7 @@ import Logo from '@components/Logo';
 const CardListItem = (props) => {
   return (
     <div className={styles.listItem}>
-      <div className={styles.listItemLeft}>☀</div>
+      <div className={styles.listItemLeft}>☼</div>
       <div className={styles.listItemRight}>{props.children}</div>
     </div>
   );
