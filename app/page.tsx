@@ -11,10 +11,9 @@ import Instagram from '@components/svg/Instagram';
 import Logo from '@components/Logo';
 import Telegram from '@components/svg/Telegram';
 import V2SectionClients from '@sections/V2SectionClients';
-import V2SectionCaption from '@sections/V2SectionCaption';
 import V2SectionHero from '@sections/V2SectionHero';
 import V2SectionProcess from '@sections/V2SectionProcess';
-import X from '@components/SVG/X';
+import X from '@components/svg/X';
 
 export async function generateMetadata({ params, searchParams }) {
   const title = 'Internet Development Studio';
@@ -54,7 +53,7 @@ export default async function Page(props) {
   const response = await fetch('https://wireframes.internet.dev/api');
   const json = await response.json();
 
-  let samples = [];
+  let samples: any = [];
   if (json && json.data && json.data.length) {
     samples = [...json.data];
   }
@@ -142,15 +141,9 @@ export default async function Page(props) {
             <a className={styles.footerItem} href="https://txt.dev">
               TXT
             </a>
-            <span className={styles.footerItemPending} href="#">
-              Analytics (coming soon)
-            </span>
-            <span className={styles.footerItemPending} href="#">
-              Diagrams (coming soon)
-            </span>
-            <span className={styles.footerItemPending} href="#">
-              Assets (coming soon)
-            </span>
+            <span className={styles.footerItemPending}>Analytics (coming soon)</span>
+            <span className={styles.footerItemPending}>Diagrams (coming soon)</span>
+            <span className={styles.footerItemPending}>Assets (coming soon)</span>
           </div>
           <div className={styles.column}>
             <div className={styles.title}>Information</div>

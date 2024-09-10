@@ -36,7 +36,6 @@ export default function V2SectionProcess(props) {
 
         <div className={styles.card}>
           <div
-            alt="Some visitors hanging out at the Internet Development Studio Company office doing various crafts and talking"
             className={styles.backdrop}
             style={{ backgroundImage: `url('https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/e58c98c2-72f6-4c39-ab3c-023d42ae1e55.png')` }}
           />
@@ -84,7 +83,6 @@ export default function V2SectionProcess(props) {
 
         <div className={styles.card}>
           <div
-            alt="Some visitors hanging out at the Internet Development Studio Company sign, they are going to use a room for a podcast."
             className={styles.backdrop}
             style={{ backgroundImage: `url('https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/c88ea48a-e1ff-4447-9b76-240481cc28be.png')` }}
           />

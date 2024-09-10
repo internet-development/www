@@ -2,6 +2,17 @@
 
 import * as React from 'react';
 
+type WebGLContextResult = {
+  gl: WebGLRenderingContext | WebGL2RenderingContext;
+  ext: {
+    internalFormat: number;
+    internalFormatRG: number;
+    formatRG: number;
+    texType: number;
+  };
+  support_linear_float: boolean | null;
+};
+
 var config = {
   TEXTURE_DOWNSAMPLE: 1,
   DENSITY_DISSIPATION: 0.9899,
@@ -13,95 +24,98 @@ var config = {
 };
 
 export default function CanvasComponent() {
-  const canvasRef = React.useRef(null);
+  const canvasRef = React.useRef<HTMLCanvasElement>(null);
 
   React.useEffect(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return;
+
     canvas.width = canvas.clientWidth;
     canvas.height = canvas.clientHeight;
 
-    var splatStack = [];
+    let splatStack: any[] = [];
 
-    var _getWebGLContext = getWebGLContext(canvas);
-    var gl = _getWebGLContext.gl;
-    var ext = _getWebGLContext.ext;
-    var support_linear_float = _getWebGLContext.support_linear_float;
+    const { gl, ext, support_linear_float } = getWebGLContext(canvas);
 
-    function getWebGLContext(canvas) {
-      var params = {
+    function getWebGLContext(canvas: HTMLCanvasElement): WebGLContextResult {
+      const params = {
         alpha: false,
         depth: false,
         stencil: false,
         antialias: false,
       };
 
-      var gl = canvas.getContext('webgl2', params);
+      let gl: WebGLRenderingContext | WebGL2RenderingContext | null = canvas.getContext('webgl2', params) as WebGL2RenderingContext | null;
 
-      var isWebGL2 = !!gl;
+      const isWebGL2 = !!gl;
 
-      if (!isWebGL2) gl = canvas.getContext('webgl', params) || canvas.getContext('experimental-webgl', params);
+      if (!isWebGL2) {
+        gl = (canvas.getContext('webgl', params) || canvas.getContext('experimental-webgl', params)) as WebGLRenderingContext | null;
+      }
 
-      var halfFloat = gl.getExtension('OES_texture_half_float');
-      var support_linear_float = gl.getExtension('OES_texture_half_float_linear');
+      if (!gl) throw new Error('WebGL not supported');
+
+      const halfFloat = gl.getExtension('OES_texture_half_float');
+      let support_linear_float = gl.getExtension('OES_texture_half_float_linear');
 
       if (isWebGL2) {
         gl.getExtension('EXT_color_buffer_float');
         support_linear_float = gl.getExtension('OES_texture_float_linear');
       }
 
-      var internalFormat = isWebGL2 ? gl.RGBA16F : gl.RGBA;
-      var internalFormatRG = isWebGL2 ? gl.RG16F : gl.RGBA;
-      var formatRG = isWebGL2 ? gl.RG : gl.RGBA;
-      var texType = isWebGL2 ? gl.HALF_FLOAT : halfFloat.HALF_FLOAT_OES;
+      const internalFormat = isWebGL2 ? (gl as WebGL2RenderingContext).RGBA16F : gl.RGBA;
+      const internalFormatRG = isWebGL2 ? (gl as WebGL2RenderingContext).RG16F : gl.RGBA;
+      const formatRG = isWebGL2 ? (gl as WebGL2RenderingContext).RG : gl.RGBA;
+      const texType = isWebGL2 ? (gl as WebGL2RenderingContext).HALF_FLOAT : halfFloat?.HALF_FLOAT_OES || gl.UNSIGNED_BYTE;
 
       return {
-        gl: gl,
+        gl: gl as WebGLRenderingContext,
         ext: {
-          internalFormat: internalFormat,
-          internalFormatRG: internalFormatRG,
-          formatRG: formatRG,
-          texType: texType,
+          internalFormat,
+          internalFormatRG,
+          formatRG,
+          texType,
         },
-        support_linear_float: support_linear_float,
+        support_linear_float: !!support_linear_float,
       };
     }
 
-    var GLProgram = (function () {
-      function GLProgram(vertexShader, fragmentShader) {
-        if (!(this instanceof GLProgram)) throw new TypeError('Cannot call a class as a function');
+    class GLProgram {
+      program: WebGLProgram;
+      uniforms: { [key: string]: WebGLUniformLocation | null };
 
+      constructor(vertexShader: WebGLShader, fragmentShader: WebGLShader) {
         this.uniforms = {};
-        this.program = gl.createProgram();
+        this.program = gl.createProgram()!;
 
         gl.attachShader(this.program, vertexShader);
         gl.attachShader(this.program, fragmentShader);
         gl.linkProgram(this.program);
 
-        if (!gl.getProgramParameter(this.program, gl.LINK_STATUS)) throw gl.getProgramInfoLog(this.program);
+        if (!gl.getProgramParameter(this.program, gl.LINK_STATUS)) {
+          throw new Error(gl.getProgramInfoLog(this.program) || 'Program failed to link');
+        }
 
-        var uniformCount = gl.getProgramParameter(this.program, gl.ACTIVE_UNIFORMS);
-
-        for (var i = 0; i < uniformCount; i++) {
-          var uniformName = gl.getActiveUniform(this.program, i).name;
-
+        const uniformCount = gl.getProgramParameter(this.program, gl.ACTIVE_UNIFORMS);
+        for (let i = 0; i < uniformCount; i++) {
+          const uniformName = gl.getActiveUniform(this.program, i)!.name;
           this.uniforms[uniformName] = gl.getUniformLocation(this.program, uniformName);
         }
       }
 
-      GLProgram.prototype.bind = function bind() {
+      bind() {
         gl.useProgram(this.program);
-      };
+      }
+    }
 
-      return GLProgram;
-    })();
-
-    function compileShader(type, source) {
-      var shader = gl.createShader(type);
-
+    function compileShader(type: number, source: string): WebGLShader {
+      const shader = gl.createShader(type)!;
       gl.shaderSource(shader, source);
       gl.compileShader(shader);
 
-      if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) throw gl.getShaderInfoLog(shader);
+      if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+        throw new Error(gl.getShaderInfoLog(shader) || 'Shader compilation failed');
+      }
 
       return shader;
     }
@@ -161,13 +175,14 @@ export default function CanvasComponent() {
       'precision highp float; precision mediump sampler2D; varying vec2 vUv; varying vec2 vL; varying vec2 vR; varying vec2 vT; varying vec2 vB; uniform sampler2D uPressure; uniform sampler2D uVelocity; vec2 boundary (in vec2 uv) {     uv = min(max(uv, 0.0), 1.0);     return uv; } void main () {     float L = texture2D(uPressure, boundary(vL)).x;     float R = texture2D(uPressure, boundary(vR)).x;     float T = texture2D(uPressure, boundary(vT)).x;     float B = texture2D(uPressure, boundary(vB)).x;     vec2 velocity = texture2D(uVelocity, vUv).xy;     velocity.xy -= vec2(R - L, T - B);     gl_FragColor = vec4(velocity, 0.0, 1.0); }'
     );
 
-    var textureWidth = void 0;
-    var textureHeight = void 0;
-    var density = void 0;
-    var velocity = void 0;
-    var divergence = void 0;
-    var curl = void 0;
-    var pressure = void 0;
+    let textureWidth: number = 0; // Ensure it's initialized as a number
+    let textureHeight: number = 0; // Ensure it's initialized as a number
+
+    let density: { first: any[]; second: any[]; swap: () => void } | undefined;
+    let velocity: { first: any[]; second: any[]; swap: () => void } | undefined;
+    let divergence: any[] | undefined;
+    let curl: any[] | undefined;
+    let pressure: { first: any[]; second: any[]; swap: () => void } | undefined;
 
     initFramebuffers();
 
@@ -247,15 +262,18 @@ export default function CanvasComponent() {
       };
     }
 
-    var blit = (function () {
+    const blit = (() => {
+      const vertexData = new Float32Array([-1, -1, -1, 1, 1, 1, 1, -1]);
+      const elementData = new Uint16Array([0, 1, 2, 0, 2, 3]);
+
       gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
-      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, -1, 1, 1, 1, 1, -1]), gl.STATIC_DRAW);
+      gl.bufferData(gl.ARRAY_BUFFER, vertexData, gl.STATIC_DRAW);
       gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, gl.createBuffer());
-      gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array([0, 1, 2, 0, 2, 3]), gl.STATIC_DRAW);
+      gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, elementData, gl.STATIC_DRAW);
       gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
       gl.enableVertexAttribArray(0);
 
-      return function (destination) {
+      return (destination: WebGLFramebuffer | null) => {
         gl.bindFramebuffer(gl.FRAMEBUFFER, destination);
         gl.drawElements(gl.TRIANGLES, 6, gl.UNSIGNED_SHORT, 0);
       };
@@ -270,27 +288,29 @@ export default function CanvasComponent() {
       resizeCanvas();
       drawBackground();
 
-      var dt = Math.min((Date.now() - lastTime) / 1000, 0.016);
+      const dt = Math.min((Date.now() - lastTime) / 1000, 0.016);
       lastTime = Date.now();
 
       gl.viewport(0, 0, textureWidth, textureHeight);
 
       timeAccumulator += dt;
 
-      if (timeAccumulator >= 0.02) {
-        timeAccumulator = 0;
-
-        var color = [Math.random() * 1.2, Math.random() * 1.2, Math.random() * 1.2];
-        var x = 80;
-        var y = canvas.height + canvas.height / 1.5;
-
-        var dx = canvas.height + 300;
-        var dy = -200;
-
-        splat(x, y, dx, dy, color);
+      if (canvas) {
+        if (timeAccumulator >= 0.02) {
+          timeAccumulator = 0;
+          const color = [Math.random() * 1.2, Math.random() * 1.2, Math.random() * 1.2];
+          splat(80, canvas.height + canvas.height / 1.5, canvas.height + 300, -200, color);
+        }
       }
 
       advectionProgram.bind();
+
+      if (!velocity) return;
+      if (!density) return;
+      if (!curl) return;
+      if (!divergence) return;
+      if (!pressure) return;
+
       gl.uniform2f(advectionProgram.uniforms.texelSize, 1.0 / textureWidth, 1.0 / textureHeight);
       gl.uniform1i(advectionProgram.uniforms.uVelocity, velocity.first[2]);
       gl.uniform1i(advectionProgram.uniforms.uSource, velocity.first[2]);
@@ -300,6 +320,7 @@ export default function CanvasComponent() {
       velocity.swap();
 
       gl.uniform1i(advectionProgram.uniforms.uVelocity, velocity.first[2]);
+
       gl.uniform1i(advectionProgram.uniforms.uSource, density.first[2]);
       gl.uniform1f(advectionProgram.uniforms.dissipation, config.DENSITY_DISSIPATION);
       blit(density.second[1]);
@@ -363,7 +384,11 @@ export default function CanvasComponent() {
       requestAnimationFrame(update);
     }
 
-    function splat(x, y, dx, dy, color) {
+    function splat(x: number, y: number, dx: number, dy: number, color: number[]) {
+      if (!velocity) return;
+      if (!canvas) return;
+      if (!density) return;
+
       splatProgram.bind();
       gl.uniform1i(splatProgram.uniforms.uTarget, velocity.first[2]);
       gl.uniform1f(splatProgram.uniforms.aspectRatio, canvas.width / canvas.height);
@@ -381,6 +406,8 @@ export default function CanvasComponent() {
     }
 
     function resizeCanvas() {
+      if (!canvas) return;
+
       (canvas.width !== canvas.clientWidth || canvas.height !== canvas.clientHeight) &&
         ((canvas.width = canvas.clientWidth), (canvas.height = canvas.clientHeight), initFramebuffers());
     }
