@@ -60,7 +60,7 @@ export default async function Page(props) {
 
   return (
     <DefaultLayout>
-      <header className={styles.top}>
+      <header className={styles.top} id="we-are-excited-to-work-together">
         <div className={styles.left}>
           <Logo height="24px" href="/" />
         </div>
@@ -176,7 +176,7 @@ export default async function Page(props) {
         </div>
         <div className={styles.bottom}>
           <div className={styles.caption}>
-            <Link href="/">⭡ Back to top</Link>
+            <Link href="#we-are-excited-to-work-together">⭡ Back to top</Link>
           </div>
           <div className={styles.copyright}>
             <span>Copyright © 2024. All rights reserved.</span>

@@ -146,7 +146,7 @@ export default function V2SectionProcess(props) {
           <CardListItem>No need to feel anxious about asking your team for one-off tasks anymore.</CardListItem>
           <CardListItem>We’re not intimidated by technical debt.</CardListItem>
           <CardListItem>Let us step in and add that missing design system component.</CardListItem>
-          <CardListItem>We’ll could tackle those obscure backlog tasks that require extra attention.</CardListItem>
+          <CardListItem>We could tackle those obscure backlog tasks that require extra attention.</CardListItem>
           <CardListItem>We can even handle the tricky forks of a repository that others are hesitant to maintain.</CardListItem>
         </div>
       </div>
