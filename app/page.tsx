@@ -7,6 +7,7 @@ import Button from '@components/Button';
 import Bluesky from '@components/svg/Bluesky';
 import DefaultLayout from '@components/DefaultLayout';
 import GitHub from '@components/svg/GitHub';
+import GridOverlay from '@components/GridOverlay';
 import Instagram from '@components/svg/Instagram';
 import Logo from '@components/Logo';
 import Telegram from '@components/svg/Telegram';
@@ -43,7 +44,7 @@ export async function generateMetadata({ params, searchParams }) {
 
 const Link = (props) => {
   return (
-    <a href={props.href} target={props.target} className={styles.link}>
+    <a href={props.href} target={props.target} className={styles.link} style={props.style}>
       {props.children}
     </a>
   );
@@ -62,10 +63,12 @@ export default async function Page(props) {
     <DefaultLayout>
       <header className={styles.top} id="we-are-excited-to-work-together">
         <div className={styles.left}>
-          <Logo height="24px" href="/" />
+          <Logo height="24px" href="/" style={{ paddingTop: 2 }} />
         </div>
         <div className={styles.right}>
-          <Link href="https://wireframes.internet.dev">↗ Public work samples</Link>
+          <Link href="https://wireframes.internet.dev" style={{ paddingBottom: 6 }}>
+            ↗ Public work samples
+          </Link>
         </div>
       </header>
       <address className={styles.address}>

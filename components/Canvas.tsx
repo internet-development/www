@@ -1,5 +1,7 @@
 'use client';
 
+import styles from '@components/Canvas.module.scss';
+
 import * as React from 'react';
 
 type WebGLContextResult = {
@@ -23,7 +25,7 @@ var config = {
   SPLAT_RADIUS: 0.2,
 };
 
-export default function CanvasComponent() {
+export default function CanvasComponent(props) {
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
 
   React.useEffect(() => {
@@ -416,5 +418,5 @@ export default function CanvasComponent() {
     var colorArr = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2];
   }, []);
 
-  return <canvas ref={canvasRef} style={{ display: 'block', gridRowStart: 1, gridColumnStart: 1, margin: 0, padding: 0, width: '100%', minHeight: '100%', maxHeight: 288 }} />;
+  return <canvas className={styles.canvas} ref={canvasRef} style={props.style} />;
 }

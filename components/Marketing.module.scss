@@ -2,14 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 56px;
+  height: 60px;
   background-color: var(--color-background);
 }
 
 .address {
   display: block;
-  padding: 24px 24px 48px 24px;
+  padding: 22px 24px 46px 24px;
   background-color: rgba(247, 247, 247, 1);
+  line-height: 1rem;
   border-bottom: 1px solid var(--theme-border);
   font-style: normal;
 }
@@ -109,19 +110,22 @@
 }
 
 .title {
-  padding: 12px 24px 12px 0;
+  padding: 2px 0 0 0;
+  line-height: 1.5rem;
   color: rgba(47, 47, 47, 1);
   border-bottom: 1px solid rgba(47, 47, 47, 1);
   font-weight: 600;
 }
 
 .footerItem {
+  padding: 0 0 0 0;
+  line-height: 1.5rem;
   display: block;
-  padding: 12px 0 12px 0;
   color: rgba(23, 23, 23, 1);
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
+  line-height: 1.5rem;
 
   &:visited {
     color: rgba(23, 23, 23, 1);
@@ -132,10 +136,19 @@
   }
 }
 
+.footerItemPending {
+  padding: 0 0 0 0;
+  line-height: 1.5rem;
+  display: block;
+  color: rgba(188, 188, 188, 1);
+  font-weight: 600;
+}
+
 .footerItemPortioned {
+  padding: 0 0 0 0;
+  line-height: 1.5rem;
   display: inline-block;
   width: 25%;
-  padding: 12px 0 12px 0;
   color: rgba(66, 66, 66, 1);
   text-decoration: none;
   font-weight: 600;
@@ -167,13 +180,6 @@
   }
 }
 
-.footerItemPending {
-  display: block;
-  padding: 12px 0 12px 0;
-  color: rgba(188, 188, 188, 1);
-  font-weight: 600;
-}
-
 .image {
   display: block;
   width: 100%;
@@ -182,7 +188,7 @@
 
 .footer {
   display: block;
-  padding: 48px 24px 0 24px;
+  padding: 44px 24px 0 24px;
   background-color: var(--color-background);
 
   @media (max-width: 1488px) {
@@ -191,7 +197,7 @@
 }
 
 .footerHeader {
-  margin: 0 0 4rem 0;
+  margin: 0 0 88px 0;
 }
 
 .footerColumns {
@@ -248,7 +254,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 2rem;
+  margin-top: 26px;
   border-top: 1px solid var(--theme-marketing-border);
 
   @media (max-width: 1024px) {

@@ -13,11 +13,11 @@
   align-self: stretch;
   border-right: 1px solid var(--theme-marketing-border);
   flex-shrink: 0;
-  padding: 24px 24px 24px 24px;
+  padding: 24px 24px 23px 24px;
   width: 25%;
 
   &:first-child {
-    padding: 24px 24px 24px 0px;
+    padding: 24px 24px 23px 0px;
   }
 
   &:last-child {
@@ -30,17 +30,18 @@
   @media (max-width: 768px) {
     border-right: 0px solid var(--theme-marketing-border);
     display: block;
-    padding: 24px 0 24px 0;
+    padding: 24px 0 23px 0;
     width: 100%;
 
     &:first-child {
-      padding: 24px 0 24px 0;
+      padding: 24px 0 23px 0;
     }
   }
 }
 
 .description {
-  margin: 1rem 0 2rem 0;
+  margin: 12px 0 2rem 0;
+  line-height: 1.5;
 }
 
 .h2 {
@@ -52,12 +53,13 @@
 }
 
 .h3 {
+  margin-top: 49px;
   font-size: var(--theme-typescale-medium);
   max-width: 768px;
   width: 100%;
   font-weight: 600;
   padding-bottom: 128px;
-  margin-top: 4rem;
+  line-height: 1.2;
 }
 
 .h4 {
@@ -72,6 +74,7 @@
   font-size: var(--theme-typescale-tiny);
   font-weight: 400;
   text-transform: uppercase;
+  margin-top: 4px;
 }
 
 .listItem {
@@ -89,6 +92,7 @@
   min-width: 10%;
   padding-left: 12px;
   width: 100%;
+  line-height: 1.5;
 }
 
 .process {

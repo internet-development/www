@@ -1,5 +1,5 @@
 .h2 {
-  margin-top: 48px;
+  margin-top: 22px;
   font-size: var(--theme-typescale-medium);
   max-width: 768px;
   width: 100%;
@@ -12,14 +12,15 @@
   width: 100%;
   font-weight: 600;
   padding-bottom: 128px;
+  line-height: 1.2;
 }
 
 .clients {
-  padding: 24px;
+  padding: 24px 24px 24px 24px;
 }
 
 .slots {
-  margin-bottom: 4rem;
+  margin-bottom: 54px;
 }
 
 .image {
