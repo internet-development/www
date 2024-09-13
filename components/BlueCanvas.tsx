@@ -17,13 +17,13 @@ type WebGLContextResult = {
 
 var config = {
   TEXTURE_DOWNSAMPLE: 1,
-  DENSITY_DISSIPATION: 0.9935,
+  DENSITY_DISSIPATION: 0.9735,
   VELOCITY_DISSIPATION: 0.992,
   PRESSURE_DISSIPATION: 0.8,
-  PRESSURE_ITERATIONS: 30,
-  CURL: 2,
-  SPLAT_RADIUS: 0.115,
-  SPEED: 0.03
+  PRESSURE_ITERATIONS: 20,
+  CURL: 1,
+  SPLAT_RADIUS: 0.02,
+  SPEED: 0.015,
 };
 
 export default function BlueCanvasComponent(props) {
@@ -316,7 +316,7 @@ export default function BlueCanvasComponent(props) {
         if (timeAccumulator >= config.SPEED) {
           timeAccumulator = 0;
           const color = [Math.random() * 8, Math.random() * 8, Math.random() * 8];
-          splat(canvas.width / 2, -canvas.height * 0.65, 0, canvas.height * 10, color);
+          splat(0, canvas.height * 0.725, canvas.width * 0.75, 0, color);
         }
       }
 
