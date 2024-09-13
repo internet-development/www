@@ -109,6 +109,14 @@
   }
 }
 
+.deadLink {
+  display: inline-block;
+  margin-right: 16px;
+  font-weight: 600;
+  color: #0047ff;
+  text-decoration: none;
+}
+
 .title {
   padding: 2px 0 0 0;
   line-height: 1.5rem;

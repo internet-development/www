@@ -16,7 +16,7 @@ const CardListItem = (props) => {
 
 export default function V2SectionProcess(props) {
   return (
-    <div className={styles.process}>
+    <div className={styles.process} id="what-do-we-do">
       <h2 className={styles.h2}>
         What does working with <Logo height="1.6rem" href="/office" /> look like?
       </h2>

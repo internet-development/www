@@ -22,10 +22,10 @@ var config = {
   PRESSURE_DISSIPATION: 0.8,
   PRESSURE_ITERATIONS: 80,
   CURL: 60,
-  SPLAT_RADIUS: 0.2,
+  SPLAT_RADIUS: 0.17,
 };
 
-export default function CanvasComponent(props) {
+export default function BlueCanvasComponent(props) {
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
 
   React.useEffect(() => {
@@ -132,7 +132,19 @@ export default function CanvasComponent(props) {
     );
     var displayShader = compileShader(
       gl.FRAGMENT_SHADER,
-      'precision highp float; precision mediump sampler2D; varying vec2 vUv; uniform sampler2D uTexture; void main () {     gl_FragColor = texture2D(uTexture, vUv); }'
+      `
+  precision highp float;
+  precision mediump sampler2D;
+  varying vec2 vUv;
+  uniform sampler2D uTexture;
+  void main () {
+    float density = texture2D(uTexture, vUv).r;
+    vec3 splatColor = vec3(1.0, 1.0, 1.0); // White splat color
+    vec3 backgroundColor = vec3(0.0, 0.278, 1.0); // #0047FF in normalized RGB
+    vec3 color = mix(backgroundColor, splatColor, density);
+    gl_FragColor = vec4(color, 1.0);
+  }
+  `
     );
     var splatShader = compileShader(
       gl.FRAGMENT_SHADER,
@@ -268,6 +280,27 @@ export default function CanvasComponent(props) {
 
     update();
 
+    function splat(x: number, y: number, dx: number, dy: number, color: number[]) {
+      if (!velocity) return;
+      if (!canvas) return;
+      if (!density) return;
+
+      splatProgram.bind();
+      gl.uniform1i(splatProgram.uniforms.uTarget, velocity.first[2]);
+      gl.uniform1f(splatProgram.uniforms.aspectRatio, canvas.width / canvas.height);
+      gl.uniform2f(splatProgram.uniforms.point, x / canvas.width, 1.0 - y / canvas.height);
+      gl.uniform3f(splatProgram.uniforms.color, dx, -dy, 1.0);
+      gl.uniform1f(splatProgram.uniforms.radius, config.SPLAT_RADIUS);
+      blit(velocity.second[1]);
+      velocity.swap();
+
+      gl.uniform1i(splatProgram.uniforms.uTarget, density.first[2]);
+
+      gl.uniform3f(splatProgram.uniforms.color, 0.9, 0.9, 0.9);
+      blit(density.second[1]);
+      density.swap();
+    }
+
     function update() {
       resizeCanvas();
 
@@ -279,10 +312,10 @@ export default function CanvasComponent(props) {
       timeAccumulator += dt;
 
       if (canvas) {
-        if (timeAccumulator >= 0.02) {
+        if (timeAccumulator >= 0.75) {
           timeAccumulator = 0;
           const color = [Math.random() * 1.2, Math.random() * 1.2, Math.random() * 1.2];
-          splat(80, canvas.height + canvas.height / 1.5, canvas.height + 300, -200, color);
+          splat(canvas.width / 2, -56, 0, canvas.height * 5.5, color);
         }
       }
 
@@ -365,27 +398,6 @@ export default function CanvasComponent(props) {
       blit(null);
 
       requestAnimationFrame(update);
-    }
-
-    function splat(x: number, y: number, dx: number, dy: number, color: number[]) {
-      if (!velocity) return;
-      if (!canvas) return;
-      if (!density) return;
-
-      splatProgram.bind();
-      gl.uniform1i(splatProgram.uniforms.uTarget, velocity.first[2]);
-      gl.uniform1f(splatProgram.uniforms.aspectRatio, canvas.width / canvas.height);
-      gl.uniform2f(splatProgram.uniforms.point, x / canvas.width, 1.0 - y / canvas.height);
-      gl.uniform3f(splatProgram.uniforms.color, dx, -dy, 1.0);
-      gl.uniform1f(splatProgram.uniforms.radius, config.SPLAT_RADIUS);
-      blit(velocity.second[1]);
-      velocity.swap();
-
-      gl.uniform1i(splatProgram.uniforms.uTarget, density.first[2]);
-
-      gl.uniform3f(splatProgram.uniforms.color, 0.9, 0.9, 0.9);
-      blit(density.second[1]);
-      density.swap();
     }
 
     function resizeCanvas() {

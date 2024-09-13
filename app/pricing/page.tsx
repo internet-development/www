@@ -1,13 +1,10 @@
 import '@root/global.scss';
-import styles from '@components/DefaultLayout.module.scss';
 
 import DefaultLayout from '@components/DefaultLayout';
-
-import SectionNavigation from '@sections/SectionNavigation';
-import SectionFooter from '@sections/SectionFooter';
-import SectionPricing from '@sections/SectionPricing';
-import SectionHero from '@sections/SectionHero';
-import SectionActions from '@sections/SectionActions';
+import GridOverlay from '@components/GridOverlay';
+import V2SectionHeroPricing from '@sections/V2SectionHeroPricing';
+import V2SectionPricingDetails from '@sections/V2SectionPricingDetails';
+import V2Wrapper from '@sections/V2Wrapper';
 
 export async function generateMetadata({ params, searchParams }) {
   const title = 'internet.dev/pricing';
@@ -39,15 +36,10 @@ export async function generateMetadata({ params, searchParams }) {
 export default async function Page(props) {
   return (
     <DefaultLayout>
-      <div className={styles.top}>
-        <SectionNavigation />
-      </div>
-
-      <SectionPricing />
-      <SectionActions title="Work with us" href="/inquire" cta="Learn more">
-        We have openings for new clients and partners, check out our prices and figure out if collaboration makes sense for you.
-      </SectionActions>
-      <SectionFooter />
+      <V2Wrapper active="PRICING">
+        <V2SectionHeroPricing />
+        <V2SectionPricingDetails />
+      </V2Wrapper>
     </DefaultLayout>
   );
 }
