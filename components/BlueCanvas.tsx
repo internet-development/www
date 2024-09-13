@@ -20,10 +20,10 @@ var config = {
   DENSITY_DISSIPATION: 0.9899,
   VELOCITY_DISSIPATION: 0.99,
   PRESSURE_DISSIPATION: 0.8,
-  PRESSURE_ITERATIONS: 120,
+  PRESSURE_ITERATIONS: 60,
   CURL: 2,
-  SPLAT_RADIUS: 0.15,
-  SPEED: 0.2
+  SPLAT_RADIUS: 0.115,
+  SPEED: 0.1
 };
 
 export default function BlueCanvasComponent(props) {
@@ -315,8 +315,8 @@ export default function BlueCanvasComponent(props) {
       if (canvas) {
         if (timeAccumulator >= config.SPEED) {
           timeAccumulator = 0;
-          const color = [Math.random() * 4, Math.random() * 4, Math.random() * 4];
-          splat(canvas.width / 2, -canvas.height * 0.5, 0, canvas.height * 6, color);
+          const color = [Math.random() * 8, Math.random() * 8, Math.random() * 8];
+          splat(canvas.width / 2, -canvas.height * 0.5, 0, canvas.height * 10, color);
         }
       }
 

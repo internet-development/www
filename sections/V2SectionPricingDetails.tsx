@@ -14,7 +14,7 @@ const CardListItem = (props) => {
   );
 };
 
-const COLOR_PRIMARY = '#fa4d56';
+const COLOR_PRIMARY = '#00ff89';
 const COLOR_FOREGROUND = '#82cfff';
 const COLOR_SECONDARY = '#0f62fe';
 
@@ -249,11 +249,11 @@ export default function V2SectionPricingDetails(props) {
               <path d="m1249.48 114.5c14.36 0 26.05-11.68 26.05-26.04s-11.68-26.05-26.05-26.05-26.05 11.68-26.05 26.05 11.68 26.04 26.05 26.04zm0-45.09c10.5 0 19.05 8.54 19.05 19.05s-8.54 19.04-19.05 19.04-19.05-8.54-19.05-19.04 8.54-19.05 19.05-19.05z" />
             </svg>
             <h4 className={styles.h4}>
-              3 MONTHS
+              3 months
               <br />
               $195,000 USD
               <br />
-              NONREFUNDABLE UPFRONT PAYMENT
+              Nonrefundable upfront payment
             </h4>
 
             <p className={styles.text}>
@@ -692,13 +692,13 @@ export default function V2SectionPricingDetails(props) {
               <path d="m121.54 425.37h-75.01c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5h75.01c1.93 0 3.5-1.57 3.5-3.5s-1.57-3.5-3.5-3.5z" />
             </svg>
             <h4 className={styles.h4}>
-              6 MONTHS
+              6 months
               <br />
               $360,000 USD
               <br />
-              8% DISCOUNT ➝ SAVE $30,000 USD
+              8% discount ➝ save $30,000 USD
               <br />
-              NONREFUNDABLE UPFRONT PAYMENT
+              Nonrefundable upfront payment
             </h4>
 
             <p className={styles.text}>
@@ -997,13 +997,13 @@ export default function V2SectionPricingDetails(props) {
               <path d="m861.89 85.42c9.91 0 17.96-8.06 17.96-17.96s-8.06-17.96-17.96-17.96-17.96 8.06-17.96 17.96 8.06 17.96 17.96 17.96zm0-28.93c6.05 0 10.96 4.92 10.96 10.96s-4.92 10.96-10.96 10.96-10.96-4.92-10.96-10.96 4.92-10.96 10.96-10.96z" />
             </svg>
             <h4 className={styles.h4}>
-              9 MONTHS
+              9 months
               <br />
               $495,000 USD
               <br />
-              15% DISCOUNT ➝ SAVE $90,000 USD
+              15% discount ➝ save $90,000 USD
               <br />
-              NONREFUNDABLE UPFRONT PAYMENT
+              Nonrefundable upfront payment
             </h4>
             <p className={styles.text}>
               Our 9-month agreement offers a deep collaboration that gives us more time with your team. On top of everything else, we are more likely to assist with strategic
@@ -1227,13 +1227,13 @@ export default function V2SectionPricingDetails(props) {
               <path d="m1296.46 313.42c-1.93 0-3.5 1.57-3.5 3.5s-1.56 3.48-3.48 3.48-3.48-1.56-3.48-3.48-1.57-3.5-3.5-3.5-3.5 1.57-3.5 3.5c0 5.78 4.7 10.48 10.48 10.48s10.48-4.7 10.48-10.48c0-1.93-1.57-3.5-3.5-3.5z" />
             </svg>
             <h4 className={styles.h4}>
-              12 MONTHS
+              12 months
               <br />
               $600,000 USD
               <br />
-              23% DISCOUNT ➝ SAVE $180,000 USD
+              23% discount ➝ save $180,000 USD
               <br />
-              NONREFUNDABLE UPFRONT PAYMENT
+              Nonrefundable upfront payment
             </h4>
             <p className={styles.text}>
               We love this deal and it benefits our clients the most. Throughout this 1-year partnership, we fully integrate into your company culture, contributing as dedicated

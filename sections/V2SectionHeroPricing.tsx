@@ -9,7 +9,7 @@ export default function V2SectionHeroPricing(props) {
     <div className={styles.hero}>
       <BlueCanvas />
       <div className={styles.content}>
-        <p className={styles.text}>We create impact by working for you.</p>
+        <p className={styles.text}>We strengthen your teams, so you can be bolder and more right.</p>
       </div>
     </div>
   );
