@@ -23,7 +23,7 @@ var config = {
   PRESSURE_ITERATIONS: 20,
   CURL: 1,
   SPLAT_RADIUS: 0.02,
-  SPEED: 0.015,
+  SPEED: 0.011,
 };
 
 export default function BlueCanvasComponent(props) {
@@ -316,7 +316,7 @@ export default function BlueCanvasComponent(props) {
         if (timeAccumulator >= config.SPEED) {
           timeAccumulator = 0;
           const color = [Math.random() * 8, Math.random() * 8, Math.random() * 8];
-          splat(0, canvas.height * 0.725, canvas.width * 0.75, 0, color);
+          splat(-16, canvas.height * 0.725, 1000, 0, color);
         }
       }
 
