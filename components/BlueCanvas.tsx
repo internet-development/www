@@ -45,7 +45,7 @@ export default function BlueCanvasComponent(props) {
         alpha: false,
         depth: false,
         stencil: false,
-        antialias: false,
+        antialias: true,
       };
 
       let gl: WebGLRenderingContext | WebGL2RenderingContext | null = canvas.getContext('webgl2', params) as WebGL2RenderingContext | null;
