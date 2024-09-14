@@ -16,14 +16,14 @@ type WebGLContextResult = {
 };
 
 var config = {
-  TEXTURE_DOWNSAMPLE: 1.4,
+  TEXTURE_DOWNSAMPLE: 1,
   DENSITY_DISSIPATION: 0.991,
-  VELOCITY_DISSIPATION: 0.998,
+  VELOCITY_DISSIPATION: 0.9992,
   PRESSURE_DISSIPATION: 0.8,
-  PRESSURE_ITERATIONS: 16,
+  PRESSURE_ITERATIONS: 8,
   CURL: 1,
-  SPLAT_RADIUS: 0.018,
-  SPEED: 0.01,
+  SPLAT_RADIUS: 0.09,
+  SPEED: 0.7,
 };
 
 export default function BlueCanvasComponent(props) {
@@ -316,7 +316,7 @@ export default function BlueCanvasComponent(props) {
         if (timeAccumulator >= config.SPEED) {
           timeAccumulator = 0;
           const color = [Math.random() * 8, Math.random() * 8, Math.random() * 8];
-          splat(-16, canvas.height * 0.725, 1000, 0, color);
+          splat(48, canvas.height * 0.725, 480, -48, color);
         }
       }
 
