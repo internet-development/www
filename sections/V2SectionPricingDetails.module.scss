@@ -17,11 +17,18 @@
 }
 
 .h4 {
-  margin-top: var(--theme-typescale-regular);
-  font-size: var(--theme-typescale-small);
-  font-weight: 400;
+  font-weight: 600;
   max-width: 768px;
   width: 100%;
+  line-height: 1.5;
+}
+
+.text {
+  font-weight: 600;
+  margin-top: 2rem;
+  width: 100%;
+  padding-right: 2rem;
+  line-height: 1.5;
 }
 
 .pricing {
@@ -61,23 +68,6 @@
 
   &:hover {
     text-decoration: underline;
-  }
-}
-
-.text {
-  font-size: var(--theme-typescale-regular);
-  font-weight: 400;
-  margin-top: 2rem;
-  width: 100%;
-  padding-right: 2rem;
-  line-height: 1.5;
-
-  @media (max-width: 768px) {
-    font-size: var(--theme-typescale-small);
-  }
-
-  @media (max-width: 568px) {
-    font-size: var(--theme-typescale-small);
   }
 }
 
