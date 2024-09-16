@@ -133,48 +133,47 @@ export default async function Page(props) {
 
           <div className={styles.column}>
             <div className={styles.title}>6 Products</div>
-            <a className={styles.footerItem} href="https://users.garden">
-              Users
-            </a>
             <a className={styles.footerItem} href="https://beautifulthings.xyz">
               Beautiful Things
             </a>
+            <span className={styles.footerItemPending}>Assets (coming soon)</span>
+            <span className={styles.footerItemPending}>Diagrams (coming soon)</span>
+            <span className={styles.footerItemPending}>Analytics (coming soon)</span>
             <a className={styles.footerItem} href="https://txt.dev">
               TXT
             </a>
-            <span className={styles.footerItemPending}>Analytics (coming soon)</span>
-            <span className={styles.footerItemPending}>Diagrams (coming soon)</span>
-            <span className={styles.footerItemPending}>Assets (coming soon)</span>
+            <a className={styles.footerItem} href="https://users.garden">
+              Users
+            </a>
           </div>
           <div className={styles.column}>
             <div className={styles.title}>Information</div>
             <a className={styles.footerItem} href="https://txt.dev/wwwjim/intdev-acceptable-use" target="_blank">
               Acceptable Use
             </a>
-            <a className={styles.footerItem} href="https://txt.dev/wwwjim/intdev-privacy-policy" target="_blank">
-              Privacy Policy
+            <a className={styles.footerItem} href="https://www.linkedin.com/company/internet-dev" target="_blank">
+              LinkedIn Page
             </a>
-            <a className={styles.footerItem} href="https://txt.dev/wwwjim/intdev-terms-of-service" target="_blank">
-              Terms of Use
+            <a className={styles.footerItem} href="/office">
+              Office Page
             </a>
             <a className={styles.footerItem} href="https://txt.dev/wwwjim/office-use-agreement">
               Office Use Agreement
             </a>
-            <a className={styles.footerItem} href="/team">
-              Team
-            </a>
             <a className={styles.footerItem} href="/pricing">
-              Pricing
+              Pricing Page
             </a>
-            <a className={styles.footerItem} href="/office">
-              Office
+            <a className={styles.footerItem} href="https://txt.dev/wwwjim/intdev-privacy-policy" target="_blank">
+              Privacy Policy
             </a>
             <a className={styles.footerItem} href="https://read.cv/teams/intdev" target="_blank">
-              Read CV
+              Read CV Page
             </a>
-
-            <a className={styles.footerItem} href="https://www.linkedin.com/company/internet-dev" target="_blank">
-              LinkedIn
+            <a className={styles.footerItem} href="/team">
+              Team Page
+            </a>
+            <a className={styles.footerItem} href="https://txt.dev/wwwjim/intdev-terms-of-service" target="_blank">
+              Terms of Use
             </a>
           </div>
         </div>
@@ -189,19 +188,19 @@ export default async function Page(props) {
             <Link href={`https://github.com/internet-development/www`}>⭣ View source code</Link>
           </div>
           <div className={styles.caption}>
-            <Telegram href={`https://t.me/internetdevelopmentstudio`} target="_blank" style={{ marginRight: `24px` }}>
-              Telegram
-            </Telegram>
+            <Bluesky href={`https://bsky.app/profile/internetstudio.bsky.social`} target="_blank" style={{ marginRight: `24px` }} />
             <GitHub href={`https://github.com/internet-development`} target="_blank" style={{ marginRight: `24px` }}>
               GitHub
             </GitHub>
-            <Bluesky href={`https://bsky.app/profile/internetstudio.bsky.social`} target="_blank" style={{ marginRight: `24px` }} />
-            <X href={`https://x.com/internetxstudio`} target="_blank" style={{ marginRight: `24px` }}>
-              X
-            </X>
             <Instagram href={`https://www.instagram.com/internetdevelopmentstudio/`} target="_blank">
               Instagram
             </Instagram>
+            <Telegram href={`https://t.me/internetdevelopmentstudio`} target="_blank" style={{ marginRight: `24px` }}>
+              Telegram
+            </Telegram>
+            <X href={`https://x.com/internetxstudio`} target="_blank" style={{ marginRight: `24px` }}>
+              X
+            </X>
           </div>
         </div>
       </footer>
