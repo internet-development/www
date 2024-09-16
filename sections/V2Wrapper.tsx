@@ -79,8 +79,14 @@ export default async function Page(props) {
 
       <nav className={styles.navigation}>
         <div className={styles.navigationLeft}>
-          {isPricingPage ? <span className={styles.deadLink}>↘ Team pricing</span> : <Link href={`/pricing`}>↘ Team pricing</Link>}
-          <Link href={`/office`}>↘ Co-working details</Link>
+          {isPricingPage ? <span className={styles.deadLink}>↘ Pricing</span> : <Link href={`/pricing`}>↘ Pricing</Link>}
+          {isOfficePage ? (
+            <span className={styles.deadLink} style={{ color: `#FF4100` }}>
+              ↘ Office
+            </span>
+          ) : (
+            <Link href={`/office`}>↘ Office</Link>
+          )}
         </div>
         <div className={styles.navigationRight}>
           <Link href={`https://t.me/internetdevelopmentstudio`} target="_blank">
@@ -103,11 +109,7 @@ export default async function Page(props) {
 
       {props.children}
 
-      <img
-        alt="The Internet Development Studio Company team hanging out outside"
-        className={styles.image}
-        src="https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/2bfeb476-9897-4a55-8f82-9ad4f1648150.png"
-      />
+      {props.footerImageSRC ? <img alt="The Internet Development Studio Company" className={styles.image} src={props.footerImageSRC} /> : null}
 
       <footer className={styles.footer}>
         <div className={styles.footerHeader}>
@@ -154,6 +156,9 @@ export default async function Page(props) {
             </a>
             <a className={styles.footerItem} href="https://txt.dev/wwwjim/intdev-terms-of-service" target="_blank">
               Terms of Use
+            </a>
+            <a className={styles.footerItem} href="https://txt.dev/wwwjim/office-use-agreement">
+              Office Use Agreement
             </a>
             <a className={styles.footerItem} href="/team">
               Team
