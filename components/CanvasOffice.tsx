@@ -17,13 +17,13 @@ type WebGLContextResult = {
 
 var config = {
   TEXTURE_DOWNSAMPLE: 1,
-  DENSITY_DISSIPATION: 0.991,
-  VELOCITY_DISSIPATION: 0.9992,
+  DENSITY_DISSIPATION: 0.994,
+  VELOCITY_DISSIPATION: 0.9997,
   PRESSURE_DISSIPATION: 0.78,
   PRESSURE_ITERATIONS: 8,
-  CURL: 80,
+  CURL: 60,
   SPLAT_RADIUS: 0.1,
-  SPEED: 0.1,
+  SPEED: 0.05,
 };
 
 export default function CanvasOfficeComponent(props) {

@@ -51,12 +51,6 @@ export default function V2SectionClients(props) {
         <img className={styles.image} src="https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/c27d71a8-017c-449b-bace-5e71e82d9d13.png" alt="We helped Muddy" />
 
         <img className={styles.image} src="https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/c5a8b9a2-f597-48ce-bb95-c7b9cf326eab.png" alt="We helped Bluesky" />
-
-        <img
-          className={styles.image}
-          src="https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/c6ac43d8-ff1b-4c72-840a-ab3eb36fa1b2.png"
-          alt="We helped Aliksandr Hudzilin"
-        />
       </div>
 
       <p className={styles.h3}>
