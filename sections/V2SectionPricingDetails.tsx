@@ -1248,7 +1248,7 @@ export default function V2SectionPricingDetails(props) {
         started!
         <br />
         <br />
-        <a href="https://t.me/internetdevelopmentstudio" target="_blank" className={styles.link}>
+        <a href="https://t.me/internetdevelopmentstudio" style={{ color: `#0047ff` }} target="_blank" className={styles.link}>
           ↗ Join us on Telegram
         </a>
       </p>

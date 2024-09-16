@@ -22,8 +22,8 @@ var config = {
   PRESSURE_DISSIPATION: 0.78,
   PRESSURE_ITERATIONS: 8,
   CURL: 80,
-  SPLAT_RADIUS: 0.2,
-  SPEED: 0.7,
+  SPLAT_RADIUS: 0.1,
+  SPEED: 0.1,
 };
 
 export default function CanvasOfficeComponent(props) {

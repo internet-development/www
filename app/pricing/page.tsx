@@ -36,7 +36,7 @@ export async function generateMetadata({ params, searchParams }) {
 export default async function Page(props) {
   return (
     <DefaultLayout>
-      <V2Wrapper active="PRICING">
+      <V2Wrapper active="PRICING" footerImageSRC="https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/2bfeb476-9897-4a55-8f82-9ad4f1648150.png">
         <V2SectionHeroPricing />
         <V2SectionPricingDetails />
       </V2Wrapper>
