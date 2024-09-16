@@ -18,13 +18,15 @@ export default function V2SectionProcess(props) {
   return (
     <div className={styles.process} id="what-do-we-do">
       <h2 className={styles.h2}>
-        What does working with <Logo height="1.6rem" href="/office" /> look like?
+        When you hire our company, you gain the full support of our dedicated six-member team.
+        <br />
+        <br />So what does working with <Logo height="1.6rem" href="/office" /> look like?
       </h2>
 
       <div className={styles.slot} style={{ marginTop: 88 }}>
         <div className={styles.card}>
           <div className={styles.label}>Introduction</div>
-          <Avatars people={['JIM', 'ANASTASIYA', 'ANDY']} />
+          <Avatars people={['PHIL', 'JIM', 'ANASTASIYA', 'ANDY']} />
           <div className={styles.h4}>Discovery video call</div>
           <div className={styles.description}>
             We start with a call to learn more about your goals or the challenge you want us to solve. This is when we figure out how our team can best work with yours to get
@@ -60,7 +62,7 @@ export default function V2SectionProcess(props) {
       <div className={styles.slot}>
         <div className={styles.card}>
           <div className={styles.label}>Day 1</div>
-          <Avatars people={['XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
+          <Avatars people={['PHIL', 'XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
           <div className={styles.h4}>Onboarding</div>
           <div className={styles.description}>
             We’ve all worked at a variety of companies, and from day one, we’ll integrate seamlessly into your team, feeling like colleagues you’ve known for a while. We’re
@@ -71,7 +73,7 @@ export default function V2SectionProcess(props) {
         </div>
         <div className={styles.card}>
           <div className={styles.label}>Day 1</div>
-          <Avatars people={['XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
+          <Avatars people={['PHIL', 'XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
           <div className={styles.h4}>Embedding</div>
           <div className={styles.description}>
             We aim to fit seamlessly into the roles you expect from your engineers and designers. We can take direction without debate, following your lead, or we can passionately
@@ -107,7 +109,7 @@ export default function V2SectionProcess(props) {
       <div className={styles.slot}>
         <div className={styles.card}>
           <div className={styles.label}>Workflow</div>
-          <Avatars people={['JIM', 'ANASTASIYA']} />
+          <Avatars people={['PHIL', 'JIM', 'ANASTASIYA']} />
           <div className={styles.h4}>Technical Program Management</div>
           <div className={styles.description}>
             You can count on us to help identify your TPGM needs. We understand the importance of defining “done” and the value of both storytelling and listening. As fresh eyes,
@@ -120,7 +122,7 @@ export default function V2SectionProcess(props) {
         </div>
         <div className={styles.card}>
           <div className={styles.label}>Workflow</div>
-          <Avatars people={['JIM', 'ANASTASIYA', 'ANDY']} />
+          <Avatars people={['PHIL', 'JIM', 'ANASTASIYA', 'ANDY']} />
           <div className={styles.h4}>Zero to one</div>
           <div className={styles.description}>
             With designers who have spent the last decade working at various startups, our creative partners are here to help bring your product to market for the first time and
@@ -135,7 +137,7 @@ export default function V2SectionProcess(props) {
         </div>
         <div className={styles.card}>
           <div className={styles.label}>Workflow</div>
-          <Avatars people={['XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
+          <Avatars people={['PHIL', 'XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
           <div className={styles.h4}>Get in quick</div>
           <div className={styles.description}>
             If you’re tired of talk and just want results, we’re ready to jump in, handle some quick tasks, or work through a long-standing backlog. No problem—we’ll get to work
@@ -154,7 +156,7 @@ export default function V2SectionProcess(props) {
       <div className={styles.slot}>
         <div className={styles.card}>
           <div className={styles.label}>Workflow</div>
-          <Avatars people={['XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
+          <Avatars people={['PHIL', 'XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
           <div className={styles.h4}>Tooling investment</div>
           <div className={styles.description}>
             We understand that a company’s design and engineering teams have their own identity, often shaped by the tools they use. So we would like to bolster this position or
@@ -169,7 +171,7 @@ export default function V2SectionProcess(props) {
         </div>
         <div className={styles.card}>
           <div className={styles.label}>Workflow</div>
-          <Avatars people={['XIANGAN', 'ELIJAH', 'JIM']} />
+          <Avatars people={['PHIL', 'XIANGAN', 'ELIJAH', 'JIM']} />
           <div className={styles.h4}>Launch, maintain, and survive</div>
           <div className={styles.description}>
             Your uptime is critical, and while we can’t guarantee 99.9999999% uptime at scale (though that’s a good problem to have), we have extensive experience keeping websites
@@ -185,7 +187,7 @@ export default function V2SectionProcess(props) {
 
         <div className={styles.card}>
           <div className={styles.label}>Workflow</div>
-          <Avatars people={['XIANGAN', 'ELIJAH', 'JIM', 'ANDY']} />
+          <Avatars people={['PHIL', 'XIANGAN', 'ELIJAH', 'JIM', 'ANDY']} />
           <div className={styles.h4}>Supporting volatility</div>
           <div className={styles.description}>
             Do your leaders often change their minds? Are you dealing with conflicting priorities and concerned that your team might not fully support the final decision? We can
@@ -199,7 +201,7 @@ export default function V2SectionProcess(props) {
 
         <div className={styles.card}>
           <div className={styles.label}>Workflow</div>
-          <Avatars people={['XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
+          <Avatars people={['PHIL', 'XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
           <div className={styles.h4}>Libraries and documentation</div>
           <div className={styles.description}>
             Documentation and design systems are a big priority for us, though we know they aren’t always top of mind for everyone. If needed, we can create comprehensive,

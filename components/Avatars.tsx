@@ -13,6 +13,13 @@ export default function Avatars(props) {
       };
     }
 
+    if (person === 'PHIL') {
+      return {
+        src: 'https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/b1b0c195-8659-4cb4-9856-44897113ac01.png',
+        name: 'Phil Bedford'
+      };
+    }
+
     if (person === 'XIANGAN') {
       return {
         src: 'https://pbs.twimg.com/profile_images/1763041975853252608/0tdU2PzS_400x400.jpg',
