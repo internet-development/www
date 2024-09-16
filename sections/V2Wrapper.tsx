@@ -79,8 +79,8 @@ export default async function Page(props) {
 
       <nav className={styles.navigation}>
         <div className={styles.navigationLeft}>
-          {isPricingPage ? <span className={styles.deadLink}>↘ Team pricing</span> : <Link href={`/pricing`}>↘ Team pricing</Link>}
-          <Link href={`/office`}>↘ Co-working details</Link>
+          {isPricingPage ? <span className={styles.deadLink}>↘ Pricing</span> : <Link href={`/pricing`}>↘ Pricing</Link>}
+          {isOfficePage ? <span className={styles.deadLink}>↘ Office</span> : <Link href={`/office`}>↘ Office</Link>}
         </div>
         <div className={styles.navigationRight}>
           <Link href={`https://t.me/internetdevelopmentstudio`} target="_blank">
