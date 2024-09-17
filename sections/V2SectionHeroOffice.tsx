@@ -9,7 +9,11 @@ export default function V2SectionHeroOffice(props) {
     <div className={styles.hero}>
       <CanvasOffice />
       <div className={styles.content}>
-        <p className={styles.text}>Come create on the internet with us.</p>
+        <p className={styles.text}>
+          Come start a fire with us
+          <br />
+          and create from our office space.
+        </p>
       </div>
     </div>
   );
