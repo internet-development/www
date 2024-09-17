@@ -21,7 +21,7 @@ var config = {
   VELOCITY_DISSIPATION: 0.9997,
   PRESSURE_DISSIPATION: 0.78,
   PRESSURE_ITERATIONS: 8,
-  CURL: 60,
+  CURL: 55,
   SPLAT_RADIUS: 0.1,
   SPEED: 0.05,
 };
@@ -318,7 +318,7 @@ vec3 backgroundColor = vec3(0.412, 0.412, 0.412);
         if (timeAccumulator >= config.SPEED) {
           timeAccumulator = 0;
           const color = [Math.random() * 8, Math.random() * 8, Math.random() * 8];
-          splat(canvas.width * 0.5, canvas.height, 0, -canvas.height * 2, color);
+          splat(canvas.width * 0.5, canvas.height, -24, -canvas.height * 2, color);
         }
       }
 
