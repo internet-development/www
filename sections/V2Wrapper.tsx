@@ -192,13 +192,13 @@ export default async function Page(props) {
             <GitHub href={`https://github.com/internet-development`} target="_blank" style={{ marginRight: `24px` }}>
               GitHub
             </GitHub>
-            <Instagram href={`https://www.instagram.com/internetdevelopmentstudio/`} target="_blank">
+            <Instagram href={`https://www.instagram.com/internetdevelopmentstudio/`} target="_blank" style={{ marginRight: `24px` }}>
               Instagram
             </Instagram>
             <Telegram href={`https://t.me/internetdevelopmentstudio`} target="_blank" style={{ marginRight: `24px` }}>
               Telegram
             </Telegram>
-            <X href={`https://x.com/internetxstudio`} target="_blank" style={{ marginRight: `24px` }}>
+            <X href={`https://x.com/internetxstudio`} target="_blank">
               X
             </X>
           </div>
