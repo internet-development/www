@@ -20,20 +20,21 @@ export default function V2SectionProcess(props) {
       <h2 className={styles.h2}>
         When you hire our company, you gain the full support of our dedicated six-member team.
         <br />
-        <br />So what does working with <Logo height="1.6rem" href="/office" /> look like?
+        <br />
+        So what does working with <Logo height="1.6rem" href="/office" /> look like?
       </h2>
 
       <div className={styles.slot} style={{ marginTop: 88 }}>
         <div className={styles.card}>
           <div className={styles.label}>Introduction</div>
           <Avatars people={['PHIL', 'JIM', 'ANASTASIYA', 'ANDY']} />
-          <div className={styles.h4}>Discovery video call</div>
+          <div className={styles.h4}>Discovery Video Call</div>
           <div className={styles.description}>
-            We start with a call to learn more about your goals or the challenge you want us to solve. This is when we figure out how our team can best work with yours to get
-            things done.
+            We start with a video call to learn about your goals or the challenges you need to solve. This is where we identify how our team can best collaborate with yours to
+            deliver results.
           </div>
-          <CardListItem>We use Zoom or Google Hangouts.</CardListItem>
-          <CardListItem>We can start scoping from a month onwards.</CardListItem>
+          <CardListItem>We are happy to use whichever video chat platform you prefer.</CardListItem>
+          <CardListItem>Our projects typically begin with a scope of at least one month.</CardListItem>
         </div>
 
         <div className={styles.card}>
@@ -46,16 +47,15 @@ export default function V2SectionProcess(props) {
         <div className={styles.card}>
           <div className={styles.label}>Introduction</div>
           <Avatars />
-          <div className={styles.h4}>Our first Seattle, WA meeting</div>
+          <div className={styles.h4}>First Meeting in Seattle, WA</div>
           <div className={styles.description}>
-            Come visit our Pike Place office and set up at a desk to work alongside us. We’ll dive into your goals and challenges, working together to find the best way to
-            collaborate. You’re welcome to work from our space while we figure out the ideal approach. You’ll also have the chance to meet other companies in the space and likely
-            enjoy some great chats.
+            Join us at our Pike Place office and work alongside our team. We will dive into your goals and challenges, collaborating to find the best way forward. You are welcome
+            to use our space while we explore the ideal approach together. Along the way, you will meet other companies in the office and potentially engage in fun conversations.
           </div>
 
-          <CardListItem>We have meeting rooms and open desks.</CardListItem>
-          <CardListItem>There is always clean filtered water.</CardListItem>
-          <CardListItem>We are here during the weekends.</CardListItem>
+          <CardListItem>Meeting rooms and open desks are available.</CardListItem>
+          <CardListItem>We always have fresh, filtered water.</CardListItem>
+          <CardListItem>We are here during weekends, too.</CardListItem>
         </div>
       </div>
 
@@ -65,22 +65,22 @@ export default function V2SectionProcess(props) {
           <Avatars people={['PHIL', 'XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
           <div className={styles.h4}>Onboarding</div>
           <div className={styles.description}>
-            We’ve all worked at a variety of companies, and from day one, we’ll integrate seamlessly into your team, feeling like colleagues you’ve known for a while. We’re
-            well-versed in various compliance requirements, including NDAs, and we’re comfortable working across Linux, MacOS, and Windows ecosystems.
+            From day one, we seamlessly integrate into your team, feeling like colleagues you have worked with for years. Our experience across various companies makes us
+            comfortable with compliance requirements, including NDAs. We are also well-versed in working within Linux, MacOS, and Windows environments.
           </div>
-          <CardListItem>We're willing to train your employees too.</CardListItem>
-          <CardListItem>If you prefer, we’ll adapt to all of your existing tools and processes.</CardListItem>
+          <CardListItem>We are happy to train your employees when needed.</CardListItem>
+          <CardListItem>If you prefer, we will adapt to your existing tools and processes.</CardListItem>
         </div>
         <div className={styles.card}>
           <div className={styles.label}>Day 1</div>
           <Avatars people={['PHIL', 'XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
           <div className={styles.h4}>Embedding</div>
           <div className={styles.description}>
-            We aim to fit seamlessly into the roles you expect from your engineers and designers. We can take direction without debate, following your lead, or we can passionately
-            advocate for features as if our jobs depend on it. We’ll join your daily routine, either as active participants or as observers, depending on your needs.
+            We aim to fit naturally into the roles you need, whether you want us to follow your direction or advocate for key features. We will integrate into your daily routine,
+            participating as much or as little as you require.
           </div>
-          <CardListItem>We’re experienced with a variety of workflows—whether it’s waterfall, agile, or the “move fast and break things” approach.</CardListItem>
-          <CardListItem>Don't hesitate to ask us to try something new!</CardListItem>
+          <CardListItem>We are comfortable with different workflows—whether agile, waterfall, or a “move fast and break things” approach.</CardListItem>
+          <CardListItem>If you want to try something new, we are always up for the challenge.</CardListItem>
         </div>
 
         <div className={styles.card}>
@@ -93,16 +93,15 @@ export default function V2SectionProcess(props) {
         <div className={styles.card}>
           <div className={styles.label}>Day 1</div>
           <Avatars />
-          <div className={styles.h4}>Work in the office</div>
+          <div className={styles.h4}>Working in the Office</div>
           <div className={styles.description}>
-            We can host stand-ups at our office, and we’re ready for any meetings you need. Our office has meeting rooms, which makes it easy for clients to bring in their own
-            customers. Being in the same space often leads to organic activities, like team-building events. We’re also happy to host and cook for large groups—just plan it with
-            us!
+            We can host stand-ups at our office and are ready for any meetings you need. Our meeting rooms provide an easy way for clients to bring in their own customers. Being
+            together in the same space often sparks spontaneous team-building activities. We are also happy to host and cook for large groups—just give us a heads-up!
           </div>
-          <CardListItem>Just give us a few days’ notice, and we’ll do our best to accommodate. We keep our client list small to stay flexible.</CardListItem>
-          <CardListItem>Pike Place in Seattle offers plenty of local restaurants and great spots for a refreshing walk during breaks.</CardListItem>
-          <CardListItem>We do not provide parking for guests unfortunately. You will have to find your own and it is not always easy.</CardListItem>
-          <CardListItem>We have symmetrical fiber internet and quiet space.</CardListItem>
+          <CardListItem>Give us a few days’ notice, and we will do our best to accommodate. We keep our client list small to stay flexible.</CardListItem>
+          <CardListItem>Pike Place offers great local restaurants and scenic spots for walks during breaks.</CardListItem>
+          <CardListItem>We do not offer guest parking, so please arrange your own.</CardListItem>
+          <CardListItem>Our office provides symmetrical fiber internet and quiet workspaces.</CardListItem>
         </div>
       </div>
 
@@ -112,44 +111,40 @@ export default function V2SectionProcess(props) {
           <Avatars people={['PHIL', 'JIM', 'ANASTASIYA']} />
           <div className={styles.h4}>Technical Program Management</div>
           <div className={styles.description}>
-            You can count on us to help identify your TPGM needs. We understand the importance of defining “done” and the value of both storytelling and listening. As fresh eyes,
-            we can offer an outside perspective and help align everyone around a common goal. While we’ve been fortunate to work on projects that have made it to top app lists,
-            we’re here to support your vision and bring our experience to help you get there too. Wins are great for everyone.
+            We help you identify your Technical Program Management needs, offering fresh perspectives to align your team around a shared goal. We understand the importance of
+            defining “done” and know the value of storytelling and listening. Our experience spans high-profile projects, but our focus is on supporting your vision and bringing
+            our expertise to help you achieve it.
           </div>
-          <CardListItem>Defining “done” is crucial, and so is being honest—we set that standard from the start.</CardListItem>
-          <CardListItem>With our deep technical expertise, having tackled some of the toughest challenges on the web, we can help guide smart, long-term decisions.</CardListItem>
-          <CardListItem>We’re passionate about software and product development—we could talk about it endlessly and never get tired.</CardListItem>
+          <CardListItem>Defining “done” from the start is critical, and we set honest expectations right away.</CardListItem>
+          <CardListItem>With deep technical expertise, we guide long-term, strategic decisions.</CardListItem>
+          <CardListItem>We are passionate about software and product development and could talk about it endlessly.</CardListItem>
         </div>
         <div className={styles.card}>
           <div className={styles.label}>Workflow</div>
           <Avatars people={['PHIL', 'JIM', 'ANASTASIYA', 'ANDY']} />
-          <div className={styles.h4}>Zero to one</div>
+          <div className={styles.h4}>Zero to One</div>
           <div className={styles.description}>
-            With designers who have spent the last decade working at various startups, our creative partners are here to help bring your product to market for the first time and
-            support you through future launches if you’d like. For us, every product launch is like releasing a heartfelt album—we want to be proud of it and the opportunities it
-            creates.
+            With years of startup experience, our design partners help bring your product to market for the first time and support future launches. Each launch is a personal
+            milestone for us, and we take pride in every opportunity it creates.
           </div>
-          <CardListItem>We love exploring logos, we have so many logo books and archives.</CardListItem>
-          <CardListItem>We use the classics like Figma, Sketch, Adobe Photoshop, Adobe Illustrator.</CardListItem>
-          <CardListItem>
-            We have quick access to some of the top photographers and videographers in Seattle, whether they’re in our network or right here in the office.
-          </CardListItem>
+          <CardListItem>We love exploring logos and have an extensive collection of logo books and archives.</CardListItem>
+          <CardListItem>We use trusted tools like Figma, Sketch, Photoshop, and Illustrator.</CardListItem>
+          <CardListItem>Our network includes some of Seattle’s top photographers and videographers, many of whom work directly in our space.</CardListItem>
         </div>
         <div className={styles.card}>
           <div className={styles.label}>Workflow</div>
           <Avatars people={['PHIL', 'XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
-          <div className={styles.h4}>Get in quick</div>
+          <div className={styles.h4}>Get in Quick</div>
           <div className={styles.description}>
-            If you’re tired of talk and just want results, we’re ready to jump in, handle some quick tasks, or work through a long-standing backlog. No problem—we’ll get to work
-            and keep the conversation brief. This is a reasonable scenario for us since we are a team of web design, graphic design, and web engineering specialists, especially if
-            your current team is overloaded with tasks they haven’t been able to tackle.
+            When you need quick results without the extra discussion, we are ready to jump in. Whether tackling long-standing backlogs or handling one-off tasks, we lighten the
+            load for your team. Our web design, graphic design, and web engineering expertise ensures we deliver results without delay.
           </div>
 
-          <CardListItem>No need to feel anxious about asking your team for one-off tasks anymore.</CardListItem>
-          <CardListItem>We’re not intimidated by technical debt.</CardListItem>
+          <CardListItem>Do not hesitate to ask for help with one-off tasks—we are ready.</CardListItem>
+          <CardListItem>We are not fazed by technical debt.</CardListItem>
           <CardListItem>Let us step in and add that missing design system component.</CardListItem>
-          <CardListItem>We could tackle those obscure backlog tasks that require extra attention.</CardListItem>
-          <CardListItem>We can even handle the tricky forks of a repository that others are hesitant to maintain.</CardListItem>
+          <CardListItem>Let us handle missing design system components or tackle those obscure backlog tasks.</CardListItem>
+          <CardListItem>We are comfortable managing tricky forks of repositories that others might avoid.</CardListItem>
         </div>
       </div>
 
@@ -157,66 +152,63 @@ export default function V2SectionProcess(props) {
         <div className={styles.card}>
           <div className={styles.label}>Workflow</div>
           <Avatars people={['PHIL', 'XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
-          <div className={styles.h4}>Tooling investment</div>
+          <div className={styles.h4}>Tooling Investment</div>
           <div className={styles.description}>
-            We understand that a company’s design and engineering teams have their own identity, often shaped by the tools they use. So we would like to bolster this position or
-            start fresh. We work with popular tools like Next.js, Postgres, Figma, GSAP, SASS, and Tailwind, and we’re well-versed in various CSS dialects, including CSS-in-JS and
-            email-compliant inline styles. One of our partners even contributed to the development and design of Expo (React Native).
+            We understand that a team’s identity is often defined by the tools they use. Whether you want to strengthen your current toolkit or start fresh, we can help. Our team
+            works with popular tools like Next.js, Postgres, Figma, GSAP, and Tailwind. We are also well-versed in CSS dialects, including CSS-in-JS and email-compliant inline
+            styles. One of our partners contributed to the development of Expo (React Native), so we understand the importance of great tooling.
           </div>
 
-          <CardListItem>A fresh start can benefit teams.</CardListItem>
-          <CardListItem>We respect the tools you’ve used—both your history and future matter.</CardListItem>
-          <CardListItem>Involve us in your consulting meetings for added perspectives and knowledge sharing.</CardListItem>
-          <CardListItem>We are not scared of LLMs.</CardListItem>
+          <CardListItem>A fresh start can energize teams and lead to new growth.</CardListItem>
+          <CardListItem>We respect the tools you’ve relied on—your history and future both matter.</CardListItem>
+          <CardListItem>Involve us in consulting meetings for additional perspectives.</CardListItem>
+          <CardListItem>We are not afraid to explore new technologies, including LLMs.</CardListItem>
         </div>
         <div className={styles.card}>
           <div className={styles.label}>Workflow</div>
           <Avatars people={['PHIL', 'XIANGAN', 'ELIJAH', 'JIM']} />
-          <div className={styles.h4}>Launch, maintain, and survive</div>
+          <div className={styles.h4}>Launch, Maintain, and Survive</div>
           <div className={styles.description}>
-            Your uptime is critical, and while we can’t guarantee 99.9999999% uptime at scale (though that’s a good problem to have), we have extensive experience keeping websites
-            running smoothly with minimal attention cost. Reducing attention cost matters because you should focus on what’s most important, not on unnecessary distractions. Let us
-            help you reach a place where you can continue to grow your product alongside your customers.
+            Your uptime is critical, and while we can not guarantee 99.9999999% uptime at scale, we specialize in keeping websites running smoothly with minimal attention cost. We
+            help you stay focused on what is most important, allowing you to grow your product and engage your customers without unnecessary distractions.
           </div>
-          <CardListItem>Have to use IPFS? We can help.</CardListItem>
-          <CardListItem>We have experience with GCE, GCS, AWS EC2, and S3.</CardListItem>
-          <CardListItem>Let us manage your VPS or consult with you on-premise solutions.</CardListItem>
+          <CardListItem>Need to work with IPFS? We’ve got you covered.</CardListItem>
+          <CardListItem>We are experienced with GCE, GCS, AWS EC2, and S3.</CardListItem>
+          <CardListItem>Let us manage your VPS or consult on on-premise solutions.</CardListItem>
           <CardListItem>We enjoy working with tools like Fly, Vercel, and Render.</CardListItem>
-          <CardListItem>We enjoy doing database backups.</CardListItem>
+          <CardListItem>Database backups? We are happy to help.</CardListItem>
         </div>
 
         <div className={styles.card}>
           <div className={styles.label}>Workflow</div>
           <Avatars people={['PHIL', 'XIANGAN', 'ELIJAH', 'JIM', 'ANDY']} />
-          <div className={styles.h4}>Supporting volatility</div>
+          <div className={styles.h4}>Supporting Volatility</div>
           <div className={styles.description}>
-            Do your leaders often change their minds? Are you dealing with conflicting priorities and concerned that your team might not fully support the final decision? We can
-            help you navigate those challenges by backing you through frequent changes. We understand that, in tough times, businesses need to focus on what truly matters. We’re
-            highly flexible and can adapt as needed.
+            If you are dealing with frequent changes in priorities or decisions, we provide the flexibility you need to adapt. We understand that leaders may change their minds,
+            and we support you through those shifts while keeping your team focused on what matters most.
           </div>
-          <CardListItem>We’re never afraid to start fresh and delete what’s not working.</CardListItem>
-          <CardListItem>Our deal structure is built to support these changes when needed.</CardListItem>
-          <CardListItem>We share your goals—achieving success and helping your business thrive.</CardListItem>
+          <CardListItem>We are never afraid to start fresh and remove what is not working.</CardListItem>
+          <CardListItem>Our flexible deal structure supports your evolving needs.</CardListItem>
+          <CardListItem>We share your goals—success and growth for your business.</CardListItem>
         </div>
 
         <div className={styles.card}>
           <div className={styles.label}>Workflow</div>
           <Avatars people={['PHIL', 'XIANGAN', 'ELIJAH', 'JIM', 'ANASTASIYA', 'ANDY']} />
-          <div className={styles.h4}>Libraries and documentation</div>
+          <div className={styles.h4}>Libraries and Documentation</div>
           <div className={styles.description}>
-            Documentation and design systems are a big priority for us, though we know they aren’t always top of mind for everyone. If needed, we can create comprehensive,
-            user-friendly documentation for your products and develop beautiful, easy-to-navigate design systems for the web. We also enjoy building tools that address these
-            challenges.
+            We value great documentation and design systems, even though they are not always top of mind for everyone. If needed, we can create clear, user-friendly documentation
+            and develop intuitive design systems for your web products. We also enjoy building tools to make these processes more efficient.
           </div>
-          <CardListItem>We’re also happy to create a custom solution if needed.</CardListItem>
-          <CardListItem>We’re comfortable using Scalar, GitBook, Notion, or any other product to support your growth.</CardListItem>
-          <CardListItem>Publications, blog posts, and video tutorials are also exciting options we love to explore.</CardListItem>
+          <CardListItem>We are happy to create custom solutions if needed.</CardListItem>
+          <CardListItem>We work with tools like Scalar, GitBook, and Notion, among others.</CardListItem>
+          <CardListItem>We love contributing to publications, blog posts, and video tutorials.</CardListItem>
         </div>
       </div>
 
       <p className={styles.h3}>
-        Interested in working with us? Send us a direct message or @-reply through any of our social channels (we’re always checking), and we’ll exchange contact details to get
-        started!
+        Interested in working with us? Send us a direct message or @-reply on any of our social channels (we’re always keeping an eye out), and we’ll exchange contact details to
+        get started!
         <br />
         <br />
         <a href="https://t.me/internetdevelopmentstudio" target="_blank" className={styles.link}>

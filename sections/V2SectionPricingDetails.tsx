@@ -22,8 +22,8 @@ export default function V2SectionPricingDetails(props) {
   return (
     <div className={styles.pricing}>
       <h2 className={styles.h2}>
-        Partnering with <Logo height="1.6rem" href="/office" /> means getting our whole team’s expertise. We thrive on collaboration, continuous learning, and shipping quality work
-        together. When you hire us, you get everyone.
+        Partnering with <Logo height="1.6rem" href="/office" /> gives you access to our entire team’s expertise and time. We thrive on collaboration, continuous learning, and
+        delivering quality work. When you work with us, you get the full team behind you.
         <br />
         <br />
         <a href="/#what-do-we-do" target="_blank" className={styles.link}>
@@ -257,8 +257,13 @@ export default function V2SectionPricingDetails(props) {
             </h4>
 
             <p className={styles.text}>
-              Our 3-month agreement is ideal for teams needing immediate support to meet tight deadlines and overcome staffing challenges. We rapidly integrate with your team to
-              accelerate critical projects, ensuring your organization achieves success this quarter.
+              Our 3-month engagement is ideal for teams needing immediate results.
+              <br />
+              <br />
+              <span className={styles.subdued}>
+                We integrate quickly to accelerate critical projects and meet tight deadlines. This option provides focused expertise to help you overcome challenges and achieve
+                key milestones without the delay of hiring internally.
+              </span>
             </p>
           </div>
           <div className={styles.column}>
@@ -702,8 +707,13 @@ export default function V2SectionPricingDetails(props) {
             </h4>
 
             <p className={styles.text}>
-              Our 6-month agreement allows us to provide a broader range of services tailored to your specific needs. This extended partnership enables us to thoroughly design,
-              build, test, deploy, maintain, and refine your products, ensuring optimal performance and quality.
+              A 6-month partnership allows us to offer a broader range of services tailored to your needs.
+              <br />
+              <br />
+              <span className={styles.subdued}>
+                With more time, we can thoroughly design, build, test, and deploy your products, ensuring optimal performance and quality. This extended collaboration leads to
+                better alignment with your long-term goals.
+              </span>
             </p>
           </div>
         </div>
@@ -1006,8 +1016,13 @@ export default function V2SectionPricingDetails(props) {
               Nonrefundable upfront payment
             </h4>
             <p className={styles.text}>
-              Our 9-month agreement offers a deep collaboration that gives us more time with your team. On top of everything else, we are more likely to assist with strategic
-              planning, streamline your processes, and bolster your go-to-market efforts, positioning your organization for long-term success.
+              Our 9-month engagement provides deeper collaboration.
+              <br />
+              <br />
+              <span className={styles.subdued}>
+                We become an integral part of your team, assisting with strategic planning, streamlining processes, and enhancing your go-to-market efforts. This longer partnership
+                positions your organization for sustained success—all without the overhead of hiring full-time staff.
+              </span>
             </p>
           </div>
           <div className={styles.column}>
@@ -1236,16 +1251,21 @@ export default function V2SectionPricingDetails(props) {
               Nonrefundable upfront payment
             </h4>
             <p className={styles.text}>
-              We love this deal and it benefits our clients the most. Throughout this 1-year partnership, we fully integrate into your company culture, contributing as dedicated
-              team members—without the overhead of permanent staff commitments.
+              Our 12-month partnership offers the greatest value.
+              <br />
+              <br />
+              <span className={styles.subdued}>
+                Over a full year, we fully immerse ourselves in your company, acting as dedicated team members. We continuously contribute to your strategic and operational goals,
+                delivering long-term impact while you remain lean and flexible.
+              </span>
             </p>
           </div>
         </div>
       </div>
 
       <p className={styles.h3}>
-        Interested in working with us? Send us a direct message or @-reply through any of our social channels (we’re always checking), and we’ll exchange contact details to get
-        started!
+        Interested in working with us? Send us a direct message or @-reply on any of our social channels (we’re always keeping an eye out), and we’ll exchange contact details to
+        get started!
         <br />
         <br />
         <a href="https://t.me/internetdevelopmentstudio" style={{ color: `#0047ff` }} target="_blank" className={styles.link}>
