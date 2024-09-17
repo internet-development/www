@@ -9,7 +9,7 @@
 .address {
   display: block;
   padding: 22px 24px 46px 24px;
-  background-color: rgba(247, 247, 247, 1);
+  background-color: #f4f4f4;
   line-height: 1rem;
   border-bottom: 1px solid var(--theme-border);
   font-style: normal;
@@ -161,6 +161,7 @@
   font-weight: 600;
   cursor: pointer;
   vertical-align: top;
+  padding-right: 16px;
 
   &:visited {
     color: rgba(23, 23, 23, 1);
