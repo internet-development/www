@@ -182,8 +182,8 @@ vec3 backgroundColor = vec3(0.412, 0.412, 0.412);
       'precision highp float; precision mediump sampler2D; varying vec2 vUv; varying vec2 vL; varying vec2 vR; varying vec2 vT; varying vec2 vB; uniform sampler2D uPressure; uniform sampler2D uVelocity; vec2 boundary (in vec2 uv) {     uv = min(max(uv, 0.0), 1.0);     return uv; } void main () {     float L = texture2D(uPressure, boundary(vL)).x;     float R = texture2D(uPressure, boundary(vR)).x;     float T = texture2D(uPressure, boundary(vT)).x;     float B = texture2D(uPressure, boundary(vB)).x;     vec2 velocity = texture2D(uVelocity, vUv).xy;     velocity.xy -= vec2(R - L, T - B);     gl_FragColor = vec4(velocity, 0.0, 1.0); }'
     );
 
-    let textureWidth: number = 0; // Ensure it's initialized as a number
-    let textureHeight: number = 0; // Ensure it's initialized as a number
+    let textureWidth: number = 0;
+    let textureHeight: number = 0;
 
     let density: { first: any[]; second: any[]; swap: () => void } | undefined;
     let velocity: { first: any[]; second: any[]; swap: () => void } | undefined;
@@ -283,7 +283,7 @@ vec3 backgroundColor = vec3(0.412, 0.412, 0.412);
 
     update();
 
-    function splat(x: number, y: number, dx: number, dy: number, color: number[]) {
+    function splat(x: number, y: number, dx: number, dy: number) {
       if (!velocity) return;
       if (!canvas) return;
       if (!density) return;
@@ -317,8 +317,7 @@ vec3 backgroundColor = vec3(0.412, 0.412, 0.412);
       if (canvas) {
         if (timeAccumulator >= config.SPEED) {
           timeAccumulator = 0;
-          const color = [Math.random() * 8, Math.random() * 8, Math.random() * 8];
-          splat(canvas.width * 0.5, canvas.height, -24, -canvas.height * 2, color);
+          splat(canvas.width * 0.5, canvas.height, -24, -canvas.height * 2);
         }
       }
 
@@ -409,9 +408,6 @@ vec3 backgroundColor = vec3(0.412, 0.412, 0.412);
       (canvas.width !== canvas.clientWidth || canvas.height !== canvas.clientHeight) &&
         ((canvas.width = canvas.clientWidth), (canvas.height = canvas.clientHeight), initFramebuffers());
     }
-
-    var count = 0;
-    var colorArr = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2];
   }, []);
 
   return <canvas className={styles.canvas} ref={canvasRef} style={props.style} />;
