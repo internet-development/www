@@ -1,0 +1,135 @@
+.card {
+  font-family: 'Open Sans', sans-serif;
+  align-self: stretch;
+  border-right: 1px solid var(--theme-marketing-border);
+  flex-shrink: 0;
+  padding: 24px 24px 23px 24px;
+  width: 25%;
+
+  &:first-child {
+    padding: 24px 24px 23px 0px;
+  }
+
+  &:last-child {
+    border-right: 0px solid var(--theme-marketing-border);
+    flex-shrink: 1;
+    min-width: 10%;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    border-right: 0px solid var(--theme-marketing-border);
+    display: block;
+    padding: 24px 0 23px 0;
+    width: 100%;
+
+    &:first-child {
+      padding: 24px 0 23px 0;
+    }
+  }
+}
+
+.description {
+  font-family: 'Open Sans', sans-serif;
+  margin: 12px 0 2rem 0;
+  line-height: 1.5;
+}
+
+.h2 {
+  font-size: var(--theme-typescale-regular);
+  font-weight: 600;
+  margin-top: 2rem;
+  max-width: 768px;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.h3 {
+  margin-top: 2rem;
+  font-size: var(--theme-typescale-regular);
+  max-width: 768px;
+  width: 100%;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.h4 {
+  margin-top: 1rem;
+  font-size: var(--theme-typescale-subsection-regular);
+  font-weight: 600;
+  max-width: 768px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.label {
+  color: var(--theme-marketing-color-label);
+  font-family: 'MonoMedium';
+  font-size: var(--theme-typescale-tiny);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.listItem {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.listItemLeft {
+  flex-shrink: 0;
+}
+
+.listItemRight {
+  min-width: 10%;
+  padding-left: 12px;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.process {
+  border-top: 1px solid var(--theme-marketing-border);
+  font-family: 'Open Sans', sans-serif;
+  padding: 24px 24px 88px 24px;
+
+  @media (max-width: 1024px) {
+    font-size: 12px;
+  }
+}
+
+.slot {
+  align-items: flex-start;
+  border-bottom: 1px solid var(--theme-marketing-border);
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    border-bottom: 0px;
+    display: block;
+  }
+}
+
+.link {
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  color: var(--theme-uw-heritage-gold);
+  text-decoration: none;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &:visited {
+    color: var(--theme-uw-heritage-gold);
+  }
+
+  &:hover {
+    text-decoration: underline;
+    color: var(--theme-uw-heritage-gold);
+  }
+}

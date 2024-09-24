@@ -1,0 +1,34 @@
+.hero {
+  background: var(--theme-uw-husky-purple);
+  color: var(--theme-uw-white);
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 288px;
+}
+
+.backdrop {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  max-height: 288px;
+}
+
+.content {
+  padding: 26px 24px 24px 24px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  padding-bottom: 136px;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.text {
+  font-size: var(--theme-typescale-regular);
+  line-height: 1.45;
+  max-width: 768px;
+  font-family: 'Encode Sans', sans-serif;
+}

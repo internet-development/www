@@ -56,6 +56,7 @@ export default async function Page(props) {
 
   const isPricingPage = props.active === 'PRICING';
   const isOfficePage = props.active === 'OFFICE';
+  const isUW = props.active === 'UNIVERSITY_OF_WASHINGTON';
 
   return (
     <>
@@ -86,6 +87,13 @@ export default async function Page(props) {
             </span>
           ) : (
             <Link href={`/office`}>↘ Office</Link>
+          )}
+          {isUW ? (
+            <span className={styles.deadLink} style={{ color: `var(--theme-uw-spirit-purple)` }}>
+              ↘ University of Washington
+            </span>
+          ) : (
+            <Link href={`/university-of-washington`}>↘ University of Washington</Link>
           )}
         </div>
         <div className={styles.navigationRight}>
