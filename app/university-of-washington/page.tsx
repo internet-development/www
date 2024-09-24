@@ -8,9 +8,8 @@ import V2SectionUniversityOfWashington from '@sections/V2SectionUniversityOfWash
 import V2SectionUniversityOfWashingtonCopy from '@sections/V2SectionUniversityOfWashingtonCopy';
 
 export async function generateMetadata({ params, searchParams }) {
-  const title = 'Internet Development Studio - ADA Websites for UW';
-  const description = `If your department requires a website that complies with the latest legal standards, is powered by reliable cutting-edge web tooling, and boasts a functional design,
-          partner with us.`;
+  const title = 'Internet Development Studio — ADA Compliance for UW';
+  const description = `If your department requires a website that complies with the latest legal standards, is powered by reliable cutting-edge web tooling, and boasts a functional design, partner with us.`;
   const url = 'https://internet.dev';
 
   return {
