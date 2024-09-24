@@ -8,8 +8,8 @@ export default function V2SectionUniversityOfWashington(props) {
       <div className={styles.backdrop}></div>
       <div className={styles.content}>
         <p className={styles.text}>
-          If your department requires a website that complies with the latest legal standards, is powered by reliable cutting-edge web tooling, and boasts a functional design,
-          partner with us.
+          If your department requires a website that complies with the latest legal standards, is powered by modern web tooling, and boasts a functional design, partner with us. We
+          read 313 pages of documentation for you.
         </p>
       </div>
     </div>
