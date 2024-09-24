@@ -119,6 +119,8 @@
   color: var(--theme-uw-heritage-gold);
   text-decoration: none;
   cursor: pointer;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
 
   &:last-child {
     margin-right: 0px;

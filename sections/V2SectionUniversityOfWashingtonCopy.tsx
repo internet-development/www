@@ -44,7 +44,7 @@ export default function V2SectionUniversityOfWashingtonCopy(props) {
 
       <p className={styles.h4} style={{ padding: `4rem 0 4rem 0` }}>
         <a href="https://t.me/internetdevelopmentstudio" target="_blank" className={styles.link}>
-          ↗ Meet our team on Telegram
+          ⭢ Meet our team on Telegram
         </a>
       </p>
 
@@ -176,7 +176,7 @@ export default function V2SectionUniversityOfWashingtonCopy(props) {
 
       <p className={styles.h4} style={{ margin: `4rem 0 4rem 0` }}>
         <a href="https://t.me/internetdevelopmentstudio" target="_blank" className={styles.link}>
-          ↗ Meet our team on Telegram
+          ⭢ Meet our team on Telegram
         </a>
         <br />
         <br />
