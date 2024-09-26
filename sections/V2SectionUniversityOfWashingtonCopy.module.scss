@@ -1,3 +1,15 @@
+.spotImage {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    min-height: 228px;
+  }
+}
+
+
 .card {
   font-family: 'Open Sans', sans-serif;
   align-self: stretch;
@@ -93,7 +105,7 @@
 .process {
   border-top: 1px solid var(--theme-marketing-border);
   font-family: 'Open Sans', sans-serif;
-  padding: 24px 24px 88px 24px;
+  padding: 0px 24px 88px 24px;
 
   @media (max-width: 1024px) {
     font-size: 12px;

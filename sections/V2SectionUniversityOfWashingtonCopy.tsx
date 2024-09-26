@@ -17,6 +17,26 @@ const CardListItem = (props) => {
 export default function V2SectionUniversityOfWashingtonCopy(props) {
   return (
     <div className={styles.process} id="what-do-we-do">
+      <div className={styles.slot}>
+        <div className={styles.card}>
+          <div
+            className={styles.spotImage}
+            style={{ backgroundImage: `url('https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/bf7fa367-4b49-45e6-b235-59d34122b2ac.png')` }}
+          />
+        </div>
+
+        <div className={styles.card}>
+          <div
+            className={styles.spotImage}
+            style={{ backgroundImage: `url('https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/168602c1-6ff4-48d7-ba8b-c12dee076d0d.png')` }}
+          />
+        </div>
+
+        <div className={styles.card}>
+          <img className={styles.spotImage} src="https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/e7bc157d-4df6-4a0a-a3a3-4f25cc2b5e97.png" />
+        </div>
+      </div>
+
       <h2 className={styles.h2}>
         We admire the{' '}
         <a className={styles.link} href="https://www.washington.edu/" target="_blank">
