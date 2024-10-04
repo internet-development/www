@@ -1,11 +1,9 @@
 import styles from '@components/Logo.module.scss';
 
-import * as React from 'react';
-
 export default function Logo(props) {
   return (
-    <a className={styles.logo} href={props.href}>
-      <svg viewBox="0 0 494.25 80.29" fill="currentColor" {...props}>
+    <a className={styles.logo} href={props.href} aria-label="Int Dev">
+      <svg viewBox="0 0 494.25 80.29" fill="currentColor" aria-hidden {...props}>
         <path d="m57.8,29.75h0c0,5.34,4.33,9.67,9.67,9.67h38.11c5.34,0,9.67,4.33,9.67,9.67v.54c0,5.34-4.33,9.67-9.67,9.67h-38.11c-5.34,0-9.67,4.33-9.67,9.67v.29c0,5.34-4.33,9.67-9.67,9.67H9.67c-5.34,0-9.67-4.33-9.67-9.67v-.54c0-5.34,4.33-9.67,9.67-9.67h38.11c5.34,0,9.67-4.33,9.67-9.67v-.02c0-5.34-4.33-9.67-9.67-9.67H9.67c-5.34,0-9.67-4.33-9.67-9.67v-.54c0-5.34,4.33-9.67,9.67-9.67h38.11c5.34,0,9.67-4.33,9.67-9.67v-.27c0-5.34,4.33-9.67,9.67-9.67h38.45c5.34,0,9.67,4.33,9.67,9.67v.55c0,5.34-4.33,9.67-9.67,9.67h-38.11c-5.34,0-9.67,4.33-9.67,9.67Z" />
         <g>
           <path d="m136.93,75.57l7.21-2.12V5.34l-7.21-2.02V0h26.69v3.32l-7,2.02v68.11l7,2.12v3.37h-26.69v-3.37Z" />
