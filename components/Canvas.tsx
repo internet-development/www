@@ -1,6 +1,7 @@
 'use client';
 
 import styles from '@components/Canvas.module.scss';
+
 import * as React from 'react';
 
 type WebGLContextResult = {
@@ -22,7 +23,7 @@ const config = {
   PRESSURE_ITERATIONS: 80,
   CURL: 60,
   SPLAT_RADIUS: 0.2,
-  SPEED: 0.02
+  SPEED: 0.02,
 };
 
 export default function CanvasComponent(props) {
@@ -288,6 +289,7 @@ export default function CanvasComponent(props) {
     pointers.push(new Pointer(-1));
 
     const onMouseDown = (e: MouseEvent) => {
+      /*
       const rect = canvas.getBoundingClientRect();
       let posX = e.clientX - rect.left;
       let posY = e.clientY - rect.top;
@@ -295,9 +297,11 @@ export default function CanvasComponent(props) {
       pointer.moved = true;
       pointer.x = posX;
       pointer.y = posY;
+      */
     };
 
     const onTouchStart = (e: TouchEvent) => {
+      /*
       e.preventDefault();
       const touches = e.targetTouches;
       const rect = canvas.getBoundingClientRect();
@@ -311,10 +315,11 @@ export default function CanvasComponent(props) {
         pointer.x = posX;
         pointer.y = posY;
       }
+      */
     };
 
-    canvas.addEventListener('mousedown', onMouseDown);
-    canvas.addEventListener('touchstart', onTouchStart);
+    // canvas.addEventListener('mousedown', onMouseDown);
+    // canvas.addEventListener('touchstart', onTouchStart);
 
     update();
 
@@ -451,10 +456,10 @@ export default function CanvasComponent(props) {
       if (!canvas) return;
 
       if (canvas.width !== canvas.clientWidth || canvas.height !== canvas.clientHeight) {
-        canvas.removeEventListener('mousedown', onMouseDown);
-        canvas.removeEventListener('touchstart', onTouchStart);
-        canvas.addEventListener('mousedown', onMouseDown);
-        canvas.addEventListener('touchstart', onTouchStart);
+        // canvas.removeEventListener('mousedown', onMouseDown);
+        // canvas.removeEventListener('touchstart', onTouchStart);
+        // canvas.addEventListener('mousedown', onMouseDown);
+        // canvas.addEventListener('touchstart', onTouchStart);
         canvas.width = canvas.clientWidth;
         canvas.height = canvas.clientHeight;
         initFramebuffers();
@@ -462,8 +467,8 @@ export default function CanvasComponent(props) {
     }
 
     return () => {
-      canvas.removeEventListener('mousedown', onMouseDown);
-      canvas.removeEventListener('touchstart', onTouchStart);
+      // canvas.removeEventListener('mousedown', onMouseDown);
+      // canvas.removeEventListener('touchstart', onTouchStart);
     };
   }, []);
 
