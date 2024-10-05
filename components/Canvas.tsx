@@ -36,9 +36,15 @@ export default function CanvasComponent(props) {
     canvas.width = canvas.clientWidth;
     canvas.height = canvas.clientHeight;
 
-    const { gl, ext, support_linear_float } = getWebGLContext(canvas);
+    const booted = getWebGLContext(canvas);
 
-    function getWebGLContext(canvas: HTMLCanvasElement): WebGLContextResult {
+    if (!booted) {
+      return;
+    }
+
+    const { gl, ext, support_linear_float } = booted;
+
+    function getWebGLContext(canvas: HTMLCanvasElement): WebGLContextResult | null {
       const params = {
         alpha: false,
         depth: false,
@@ -54,7 +60,7 @@ export default function CanvasComponent(props) {
         gl = (canvas.getContext('webgl', params) || canvas.getContext('experimental-webgl', params)) as WebGLRenderingContext | null;
       }
 
-      if (!gl) throw new Error('WebGL not supported');
+      if (!gl) return null;
 
       const halfFloat = gl.getExtension('OES_texture_half_float');
       let support_linear_float = gl.getExtension('OES_texture_half_float_linear');
@@ -94,7 +100,7 @@ export default function CanvasComponent(props) {
         gl.linkProgram(this.program);
 
         if (!gl.getProgramParameter(this.program, gl.LINK_STATUS)) {
-          throw new Error(gl.getProgramInfoLog(this.program) || 'Program failed to link');
+          return;
         }
 
         const uniformCount = gl.getProgramParameter(this.program, gl.ACTIVE_UNIFORMS);
@@ -175,7 +181,11 @@ export default function CanvasComponent(props) {
     let curl: any[] | undefined;
     let pressure: { first: any[]; second: any[]; swap: () => void } | undefined;
 
-    initFramebuffers();
+    try {
+      initFramebuffers();
+    } catch (e) {
+      return;
+    }
 
     const clearProgram = new GLProgram(baseVertexShader, clearShader);
     const displayProgram = new GLProgram(baseVertexShader, displayShader);
@@ -288,40 +298,11 @@ export default function CanvasComponent(props) {
     let pointers: Pointer[] = [];
     pointers.push(new Pointer(-1));
 
-    const onMouseDown = (e: MouseEvent) => {
-      /*
-      const rect = canvas.getBoundingClientRect();
-      let posX = e.clientX - rect.left;
-      let posY = e.clientY - rect.top;
-      let pointer = pointers[0];
-      pointer.moved = true;
-      pointer.x = posX;
-      pointer.y = posY;
-      */
-    };
-
-    const onTouchStart = (e: TouchEvent) => {
-      /*
-      e.preventDefault();
-      const touches = e.targetTouches;
-      const rect = canvas.getBoundingClientRect();
-      while (touches.length >= pointers.length) pointers.push(new Pointer(touches.length));
-      for (let i = 0; i < touches.length; i++) {
-        let posX = touches[i].clientX - rect.left;
-        let posY = touches[i].clientY - rect.top;
-        let pointer = pointers[i];
-        pointer.id = touches[i].identifier;
-        pointer.moved = true;
-        pointer.x = posX;
-        pointer.y = posY;
-      }
-      */
-    };
-
-    // canvas.addEventListener('mousedown', onMouseDown);
-    // canvas.addEventListener('touchstart', onTouchStart);
-
-    update();
+    try {
+      update();
+    } catch (e) {
+      return;
+    }
 
     function update() {
       resizeCanvas();
@@ -456,20 +437,11 @@ export default function CanvasComponent(props) {
       if (!canvas) return;
 
       if (canvas.width !== canvas.clientWidth || canvas.height !== canvas.clientHeight) {
-        // canvas.removeEventListener('mousedown', onMouseDown);
-        // canvas.removeEventListener('touchstart', onTouchStart);
-        // canvas.addEventListener('mousedown', onMouseDown);
-        // canvas.addEventListener('touchstart', onTouchStart);
         canvas.width = canvas.clientWidth;
         canvas.height = canvas.clientHeight;
         initFramebuffers();
       }
     }
-
-    return () => {
-      // canvas.removeEventListener('mousedown', onMouseDown);
-      // canvas.removeEventListener('touchstart', onTouchStart);
-    };
   }, []);
 
   return <canvas className={styles.canvas} ref={canvasRef} style={props.style} />;

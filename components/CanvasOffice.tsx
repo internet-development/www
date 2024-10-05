@@ -38,9 +38,15 @@ export default function CanvasOfficeComponent(props) {
 
     let splatStack: any[] = [];
 
-    const { gl, ext, support_linear_float } = getWebGLContext(canvas);
+    const booted = getWebGLContext(canvas);
 
-    function getWebGLContext(canvas: HTMLCanvasElement): WebGLContextResult {
+    if (!booted) {
+      return;
+    }
+
+    const { gl, ext, support_linear_float } = booted;
+
+    function getWebGLContext(canvas: HTMLCanvasElement): WebGLContextResult | null {
       const params = {
         alpha: false,
         depth: false,
@@ -56,7 +62,7 @@ export default function CanvasOfficeComponent(props) {
         gl = (canvas.getContext('webgl', params) || canvas.getContext('experimental-webgl', params)) as WebGLRenderingContext | null;
       }
 
-      if (!gl) throw new Error('WebGL not supported');
+      if (!gl) return null;
 
       const halfFloat = gl.getExtension('OES_texture_half_float');
       let support_linear_float = gl.getExtension('OES_texture_half_float_linear');
@@ -96,7 +102,7 @@ export default function CanvasOfficeComponent(props) {
         gl.linkProgram(this.program);
 
         if (!gl.getProgramParameter(this.program, gl.LINK_STATUS)) {
-          throw new Error(gl.getProgramInfoLog(this.program) || 'Program failed to link');
+          return;
         }
 
         const uniformCount = gl.getProgramParameter(this.program, gl.ACTIVE_UNIFORMS);
@@ -191,7 +197,9 @@ vec3 backgroundColor = vec3(0.412, 0.412, 0.412);
     let curl: any[] | undefined;
     let pressure: { first: any[]; second: any[]; swap: () => void } | undefined;
 
-    initFramebuffers();
+    try {
+      initFramebuffers();
+    } catch (e) {}
 
     var clearProgram = new GLProgram(baseVertexShader, clearShader);
     var displayProgram = new GLProgram(baseVertexShader, displayShader);
@@ -281,7 +289,9 @@ vec3 backgroundColor = vec3(0.412, 0.412, 0.412);
     var lastTime = Date.now();
     let timeAccumulator = 0;
 
-    update();
+    try {
+      update();
+    } catch (e) {}
 
     function splat(x: number, y: number, dx: number, dy: number) {
       if (!velocity) return;
