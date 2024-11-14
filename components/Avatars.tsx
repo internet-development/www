@@ -55,6 +55,13 @@ export default function Avatars(props) {
       };
     }
 
+    if (person === 'CHENYU') {
+      return {
+        src: 'https://pbs.twimg.com/profile_images/1855462015361548288/2USHzAC4_400x400.jpg',
+        name: 'Chenyu Huang',
+      };
+    }
+
     return null;
   });
 
