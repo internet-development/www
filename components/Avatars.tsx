@@ -13,13 +13,6 @@ export default function Avatars(props) {
       };
     }
 
-    if (person === 'PHIL') {
-      return {
-        src: 'https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/b1b0c195-8659-4cb4-9856-44897113ac01.png',
-        name: 'Phil Bedford',
-      };
-    }
-
     if (person === 'XIANGAN') {
       return {
         src: 'https://pbs.twimg.com/profile_images/1841883108305731585/3rhRm7aY_400x400.jpg',
@@ -36,7 +29,7 @@ export default function Avatars(props) {
 
     if (person === 'JIM') {
       return {
-        src: 'https://pbs.twimg.com/profile_images/1768438338841890816/taF_Uvqu_400x400.jpg',
+        src: 'https://pbs.twimg.com/profile_images/1880540584588570624/4LQlAZ0q_400x400.jpg',
         name: 'Jimmy Lee',
       };
     }
